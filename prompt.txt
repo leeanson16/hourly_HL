@@ -1,0 +1,108 @@
+Write me a program that logs past hour (with an hourly start time, aka 8am, 9am) different assets High and Low
+My interactive brokers port is 4002
+Log in a log file
+Change from utc time to HKT.
+Use pywhatkit to send message to +85268189621
+
+
+XAUUSD should be consistent with below fields:
+Underlying
+    
+XAUUSD
+
+Security Type
+    
+Commodities
+
+Currency
+    
+USD
+
+Trading Units 
+    
+Fine Troy
+ Ounce
+
+Settlement Method
+    
+Loco London
+
+Delivery Grades
+    
+London Good Delivery
+
+Delivery Units
+    
+London Good Delivery Gold bar
+
+Exchange
+    
+SMART
+
+Symbol
+    
+XAUUSD
+
+Contract ID
+    
+69067924
+
+Min. Tick Size
+    
+0.01
+
+
+XAUUSD should be consistent with below fields:
+Underlying
+    
+XAGUSD
+
+Security Type
+    
+Commodities
+
+Currency
+    
+USD
+
+Trading Units 
+    
+Fine Troy Ounce
+
+Settlement Method
+    
+Loco London
+
+Delivery Grades
+    
+London Good Delivery
+
+Delivery Units
+    
+London Good Delivery Silver Bar
+
+Exchange
+    
+SMART
+
+Symbol
+    
+XAGUSD
+
+Contract ID
+    
+77124483
+
+Min. Tick Size
+    
+0.0005
+
+
+AUD.USD should be consistent with below fields:
+Exchange: IDEALPRO
+Sec Type: CASH
+
+
+EUR.USD should be consistent with below fields:
+Exchange: IDEALPRO
+Sec Type: CASH
