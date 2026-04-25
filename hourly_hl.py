@@ -236,7 +236,13 @@ def fetch_spot_price(ib, contract, decimals):
             pass
         if price is None or (isinstance(price, float) and math.isnan(price)):
             return None
-        return round(float(price), decimals)
+        p = float(price)
+        if p == -1.0:
+            return None
+        r = round(p, decimals)
+        if r == -1.0:
+            return None
+        return r
     except Exception:
         return None
 
