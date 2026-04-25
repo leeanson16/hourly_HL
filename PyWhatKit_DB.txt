@@ -3378,3 +3378,43 @@ Time: 14:2
 Phone Number: +85266911989
 Message: xau 4684.85 spot 4687.55 high 4669.81 lowxag 75.220 high 74.820 lowaud 0.71293 high 0.71207 loweur 1.16832 high 1.16766 lowbrent 102.02 high 101.43 low
 --------------------
+Date: 24/4/2026
+Time: 19:0
+Phone Number: +85266911989
+Message: xau 4679.39 spot 4686.40 high 4674.69 lowxag 74.930 high 74.640 lowaud 0.71364 high 0.71286 loweur 1.17036 high 1.16857 lowbrent 103.64 high 102.98 low
+--------------------
+Date: 24/4/2026
+Time: 20:0
+Phone Number: +85266911989
+Message: xau 4709.24 spot 4717.53 high 4677.89 lowxag 76.250 high 74.820 lowaud 0.71520 high 0.71333 loweur 1.17185 high 1.17027 lowbrent 102.92 high 99.77 low
+--------------------
+Date: 25/4/2026
+Time: 0:0
+Phone Number: +85266911989
+Message: xau 4728.40 spot 4733.58 high 4715.12 lowxag 76.570 high 75.620 lowaud 0.71552 high 0.71362 loweur 1.17199 high 1.17007 lowbrent 102.63 high 99.90 low
+--------------------
+Date: 25/4/2026
+Time: 1:0
+Phone Number: +85266911989
+Message: xau 4727.68 spot 4729.86 high 4719.14 lowxag 76.430 high 76.070 lowaud 0.71537 high 0.71459 loweur 1.17197 high 1.17131 lowbrent 101.64 high 100.46 low
+--------------------
+Date: 25/4/2026
+Time: 2:0
+Phone Number: +85266911989
+Message: xau 4723.05 spot 4730.17 high 4719.12 lowxag 76.690 high 76.270 lowaud 0.71550 high 0.71486 loweur 1.17213 high 1.17121 lowbrent 101.33 high 100.44 low
+--------------------
+Date: 25/4/2026
+Time: 3:0
+Phone Number: +85266911989
+Message: xau 4723.19 spot 4724.95 high 4716.87 lowxag 76.560 high 76.320 lowaud 0.71527 high 0.71459 loweur 1.17199 high 1.17111 lowbrent 101.85 high 100.86 low
+--------------------
+Date: 25/4/2026
+Time: 4:0
+Phone Number: +85266911989
+Message: xau 4716.19 spot 4725.95 high 4713.76 lowxag 76.560 high 75.950 lowaud 0.71541 high 0.71502 loweur 1.17210 high 1.17155 lowbrent 102.41 high 101.36 low
+--------------------
+Date: 25/4/2026
+Time: 5:0
+Phone Number: +85266911989
+Message: xau -1.00 spot 4717.67 high 4705.46 lowxag 76.000 high 75.640 lowaud 0.71534 high 0.71454 loweur 1.17235 high 1.17167 lowbrent 102.97 high 102.10 low
+--------------------
