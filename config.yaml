@@ -82,4 +82,4 @@ schedule:
   - start_day: Friday
     start_time: "19:00"
     end_day: Saturday
-    end_time: "05:55"
+    end_time: "00:55"
