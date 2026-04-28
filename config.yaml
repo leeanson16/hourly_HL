@@ -13,7 +13,7 @@ brent_contract_month: "202606"
 brent_multiplier: 0.945
 
 # If true, skip sending WhatsApp on the first in-schedule run (then send on subsequent runs).
-dont_send_now: True
+dont_send_now: False
 
 # Run only during these weekly windows (HKT). All times are Hong Kong time.
 # List multiple start/end windows; run when current time falls in any of them.
