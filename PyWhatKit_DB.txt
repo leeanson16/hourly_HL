@@ -3428,3 +3428,48 @@ Time: 9:9
 Phone Number: +85266911989
 Message: xau 4698.48 spot 4698.15 high 4672.17 lowxag 75.690 high 74.840 lowaud 0.71578 high 0.71425 loweur 1.17174 high 1.17056 lowbrent 103.99 high 103.28 low
 --------------------
+Date: 27/4/2026
+Time: 13:0
+Phone Number: +85266911989
+Message: xau 4724.34 spot 4729.99 high 4722.85 lowxag 76.560 high 76.320 lowaud 0.71749 high 0.71666 loweur 1.17315 high 1.17253 lowbrent 102.97 high 102.74 low
+--------------------
+Date: 27/4/2026
+Time: 18:0
+Phone Number: +85266911989
+Message: xau 4703.81 spot 4708.39 high 4699.49 lowxag 75.720 high 75.430 lowaud 0.71903 high 0.71830 loweur 1.17510 high 1.17411 lowbrent 104.43 high 103.83 low
+--------------------
+Date: 27/4/2026
+Time: 19:0
+Phone Number: +85266911989
+Message: xau 4708.69 spot 4710.97 high 4699.57 lowxag 75.940 high 75.580 lowaud 0.71885 high 0.71835 loweur 1.17478 high 1.17390 lowbrent 104.13 high 102.63 low
+--------------------
+Date: 27/4/2026
+Time: 20:0
+Phone Number: +85266911989
+Message: xau 4705.44 spot 4709.22 high 4700.16 lowxag 75.920 high 75.480 lowaud 0.71876 high 0.71827 loweur 1.17471 high 1.17379 lowbrent 103.02 high 102.12 low
+--------------------
+Date: 27/4/2026
+Time: 21:0
+Phone Number: +85266911989
+Message: xau 4699.73 spot 4712.66 high 4697.13 lowxag 75.940 high 75.210 lowaud 0.71959 high 0.71850 loweur 1.17551 high 1.17409 lowbrent 103.76 high 102.35 low
+--------------------
+Date: 27/4/2026
+Time: 22:0
+Phone Number: +85266911989
+Message: xau 4694.37 spot 4703.63 high 4689.13 lowxag 75.600 high 75.000 lowaud 0.71945 high 0.71828 loweur 1.17542 high 1.17358 lowbrent 104.00 high 103.10 low
+--------------------
+Date: 27/4/2026
+Time: 23:0
+Phone Number: +85266911989
+Message: xau 4679.02 spot 4696.86 high 4676.60 lowxag 75.590 high 74.870 lowaud 0.72001 high 0.71859 loweur 1.17481 high 1.17333 lowbrent 104.44 high 103.37 low
+--------------------
+Date: 28/4/2026
+Time: 0:0
+Phone Number: +85266911989
+Message: xau 4669.48 spot 4682.61 high 4667.21 lowxag 75.280 high 74.650 lowaud 0.71939 high 0.71867 loweur 1.17369 high 1.17294 lowbrent 105.49 high 104.64 low
+--------------------
+Date: 28/4/2026
+Time: 8:0
+Phone Number: +85266911989
+Message: xau 4693.98 spot 4695.16 high 4687.40 lowxag 75.990 high 75.860 lowaud 0.71908 high 0.71866 loweur 1.17231 high 1.17214 lowbrent 104.70 high 104.44 low
+--------------------

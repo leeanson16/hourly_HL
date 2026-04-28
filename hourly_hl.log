@@ -7551,3 +7551,9 @@
 2026-04-27 09:09:05 INFO EUR.USD past hour HL | bar_start=2026-04-27 08:00:00+08:00 | high=1.17174 | low=1.17056
 2026-04-27 09:09:07 INFO Brent past hour HL | bar_start=2026-04-27 08:00:00+08:00 | high=103.99 | low=103.28
 2026-04-27 09:09:27 INFO Next run in 3.85 hrs (at 20 s past the hour HKT)
+2026-04-27 13:00:27 INFO XAUUSD past hour HL | bar_start=2026-04-27 12:00:00+08:00 | high=4729.99 | low=4722.85
+2026-04-27 13:00:27 INFO XAGUSD past hour HL | bar_start=2026-04-27 12:00:00+08:00 | high=76.560 | low=76.320
+2026-04-27 13:00:28 INFO AUD.USD past hour HL | bar_start=2026-04-27 12:00:00+08:00 | high=0.71749 | low=0.71666
+2026-04-27 13:00:28 INFO EUR.USD past hour HL | bar_start=2026-04-27 12:00:00+08:00 | high=1.17315 | low=1.17253
+2026-04-27 13:00:30 INFO Brent past hour HL | bar_start=2026-04-27 12:00:00+08:00 | high=102.97 | low=102.74
+2026-04-27 13:00:49 INFO Next run in 4.99 hrs (at 20 s past the hour HKT)
