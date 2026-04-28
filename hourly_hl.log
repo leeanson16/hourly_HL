@@ -7630,3 +7630,9 @@
 2026-04-28 12:18:34 INFO WhatsApp: +85266911989
 2026-04-28 12:18:34 INFO Outside schedule window; skipping run
 2026-04-28 12:18:34 INFO Next run in 0.70 hrs (at 20 s past the hour HKT)
+2026-04-28 13:00:26 INFO XAUUSD past hour HL | bar_start=2026-04-28 12:00:00+08:00 | high=4671.42 | low=4666.80
+2026-04-28 13:00:26 INFO XAGUSD past hour HL | bar_start=2026-04-28 12:00:00+08:00 | high=74.680 | low=74.430
+2026-04-28 13:00:27 INFO AUD.USD past hour HL | bar_start=2026-04-28 12:00:00+08:00 | high=0.71863 | low=0.71820
+2026-04-28 13:00:27 INFO EUR.USD past hour HL | bar_start=2026-04-28 12:00:00+08:00 | high=1.17165 | low=1.17118
+2026-04-28 13:00:28 INFO Brent past hour HL | bar_start=2026-04-28 12:00:00+08:00 | high=103.74 | low=103.35
+2026-04-28 13:00:49 INFO Next run in 5.99 hrs (at 20 s past the hour HKT)
