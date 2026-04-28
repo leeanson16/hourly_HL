@@ -3473,3 +3473,8 @@ Time: 8:0
 Phone Number: +85266911989
 Message: xau 4693.98 spot 4695.16 high 4687.40 lowxag 75.990 high 75.860 lowaud 0.71908 high 0.71866 loweur 1.17231 high 1.17214 lowbrent 104.70 high 104.44 low
 --------------------
+Date: 28/4/2026
+Time: 9:0
+Phone Number: +85266911989
+Message: xau 4689.39 spot 4701.50 high 4690.54 lowxag 76.160 high 75.700 lowaud 0.71947 high 0.71878 loweur 1.17270 high 1.17172 lowbrent 105.05 high 104.14 low
+--------------------
