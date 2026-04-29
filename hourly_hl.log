@@ -7848,3 +7848,10 @@
 2026-04-29 20:04:56 INFO EUR.USD past hour HL | bar_start=2026-04-29 19:00:00+08:00 | high=1.17097 | low=1.16997
 2026-04-29 20:04:57 INFO Brent past hour HL | bar_start=2026-04-29 19:00:00+08:00 | high=108.48 | low=107.88
 2026-04-29 20:05:17 INFO Next run in 0.92 hrs (at 20 s past the hour HKT)
+2026-04-29 21:00:28 WARNING IB connect attempt 1/3 failed: 
+2026-04-29 21:00:28 INFO Retrying in 30 s ...
+2026-04-29 21:01:06 WARNING IB connect attempt 2/3 failed: 
+2026-04-29 21:01:06 INFO Retrying in 30 s ...
+2026-04-29 21:01:44 WARNING IB connect attempt 3/3 failed: 
+2026-04-29 21:01:44 WARNING IB connect/run failed, will retry next run: 
+2026-04-29 21:01:44 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
