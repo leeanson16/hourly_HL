@@ -3583,3 +3583,73 @@ Time: 8:6
 Phone Number: +85266911989
 Message: xau 4624.49 spot 4634.09 high 4626.59 lowxag 74.520 high 74.090 low
 --------------------
+Date: 1/5/2026
+Time: 11:0
+Phone Number: +85266911989
+Message: xau 4619.35 spot 4636.08 high 4616.77 lowxag 74.600 high 74.060 lowaud 0.72052 high 0.71956 loweur 1.17341 high 1.17296 low
+--------------------
+Date: 1/5/2026
+Time: 12:0
+Phone Number: +85266911989
+Message: xau 4626.36 spot 4632.22 high 4617.92 lowxag 74.490 high 74.110 lowaud 0.72032 high 0.71947 loweur 1.17365 high 1.17307 low
+--------------------
+Date: 1/5/2026
+Time: 13:0
+Phone Number: +85266911989
+Message: xau 4608.64 spot 4628.82 high 4609.36 lowxag 74.360 high 73.750 lowaud 0.71962 high 0.71898 loweur 1.17323 high 1.17260 low
+--------------------
+Date: 1/5/2026
+Time: 14:0
+Phone Number: +85266911989
+Message: xau 4605.11 spot 4616.08 high 4602.91 lowxag 74.060 high 73.750 lowaud 0.71938 high 0.71888 loweur 1.17271 high 1.17219 low
+--------------------
+Date: 1/5/2026
+Time: 15:0
+Phone Number: +85266911989
+Message: xau 4594.79 spot 4608.09 high 4590.94 lowxag 73.870 high 73.340 lowaud 0.71998 high 0.71864 loweur 1.17451 high 1.17189 low
+--------------------
+Date: 1/5/2026
+Time: 16:0
+Phone Number: +85266911989
+Message: xau 4579.52 spot 4598.22 high 4576.10 lowxag 73.670 high 73.080 lowaud 0.72030 high 0.71931 loweur 1.17421 high 1.17315 low
+--------------------
+Date: 1/5/2026
+Time: 17:0
+Phone Number: +85266911989
+Message: xau 4567.84 spot 4582.67 high 4565.09 lowxag 73.320 high 73.020 lowaud 0.71987 high 0.71913 loweur 1.17481 high 1.17321 low
+--------------------
+Date: 1/5/2026
+Time: 18:0
+Phone Number: +85266911989
+Message: xau 4562.22 spot 4573.05 high 4560.25 lowxag 73.320 high 72.960 lowaud 0.71957 high 0.71837 loweur 1.17440 high 1.17308 low
+--------------------
+Date: 1/5/2026
+Time: 19:0
+Phone Number: +85266911989
+Message: xau 4567.66 spot 4576.23 high 4561.51 lowxag 73.400 high 73.120 lowaud 0.71923 high 0.71843 loweur 1.17458 high 1.17310 low
+--------------------
+Date: 1/5/2026
+Time: 20:0
+Phone Number: +85266911989
+Message: xau 4578.09 spot 4579.67 high 4562.52 lowxag 73.730 high 73.150 lowaud 0.72001 high 0.71899 loweur 1.17583 high 1.17441 low
+--------------------
+Date: 1/5/2026
+Time: 21:0
+Phone Number: +85266911989
+Message: xau 4591.58 spot 4607.83 high 4575.11 lowxag 75.240 high 73.690 lowaud 0.72086 high 0.71944 loweur 1.17689 high 1.17483 low
+--------------------
+Date: 1/5/2026
+Time: 22:0
+Phone Number: +85266911989
+Message: xau 4630.26 spot 4628.89 high 4586.54 lowxag 76.390 high 74.180 lowaud 0.72149 high 0.72001 loweur 1.17639 high 1.17440 low
+--------------------
+Date: 1/5/2026
+Time: 23:2
+Phone Number: +85266911989
+Message: xag 76.980 high 75.650 lowaud 0.72279 high 0.72122 loweur 1.17853 high 1.17599 low
+--------------------
+Date: 2/5/2026
+Time: 0:1
+Phone Number: +85266911989
+Message: xau 4643.34 spot 4648.27 high 4619.16 lowxag 76.360 high 75.260 lowaud 0.72235 high 0.72134 loweur 1.17709 high 1.17534 low
+--------------------
