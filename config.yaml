@@ -9,7 +9,7 @@ use_brent: True
 # Brent NYMEX future: set brent_con_id from TWS Contract Details when the front month changes.
 # If unset, brent_contract_month (YYYYMM) is used instead. Expired months return HMDS "no data".
 # brent_con_id: 339981260
-brent_contract_month: "202606"
+brent_contract_month: "202609"
 brent_multiplier: 0.945
 
 # If true, skip sending WhatsApp on the first in-schedule run (then send on subsequent runs).
