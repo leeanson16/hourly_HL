@@ -8142,3 +8142,10 @@
 2026-05-02 11:47:35 INFO WhatsApp: +85266911989
 2026-05-02 11:47:35 INFO Outside schedule window; skipping run
 2026-05-02 11:47:35 INFO Next run in 43.21 hrs (at 20 s past the hour HKT)
+2026-05-04 07:00:22 WARNING IB connect attempt 1/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-05-04 07:00:22 INFO Retrying in 30 s ...
+2026-05-04 07:00:54 WARNING IB connect attempt 2/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-05-04 07:00:54 INFO Retrying in 30 s ...
+2026-05-04 07:01:26 WARNING IB connect attempt 3/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-05-04 07:01:26 WARNING IB connect/run failed, will retry next run: [WinError 1225] The remote computer refused the network connection
+2026-05-04 07:01:26 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
