@@ -306,7 +306,7 @@ def run_once(whatsapp_number=None, send_whatsapp=True, assets=None, brent_multip
         try:
             import pywhatkit as kit
             msg = "\n".join(lines)
-            kit.sendwhatmsg_instantly(whatsapp_number, msg, wait_time=15, tab_close=True, close_time=3)
+            kit.sendwhatmsg_instantly(whatsapp_number, msg, wait_time=22, tab_close=True, close_time=15)
         except Exception as e:
             log.warning("WhatsApp send failed: %s", e)
 
