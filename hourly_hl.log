@@ -8149,3 +8149,1030 @@
 2026-05-04 07:01:26 WARNING IB connect attempt 3/3 failed: [WinError 1225] The remote computer refused the network connection
 2026-05-04 07:01:26 WARNING IB connect/run failed, will retry next run: [WinError 1225] The remote computer refused the network connection
 2026-05-04 07:01:26 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-04 07:34:24 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202609', exchange='NYMEX', currency='USD')
+2026-05-04 07:34:24 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 6: Tuesday 19:00 - Wednesday 00:55 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-04 07:34:24 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-04 07:34:24 INFO WhatsApp: +85266911989
+2026-05-04 07:34:33 INFO XAUUSD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=4641.57 | low=4609.21
+2026-05-04 07:34:33 INFO XAGUSD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=76.940 | low=73.770
+2026-05-04 07:34:34 INFO AUD.USD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=0.72206 | low=0.72108
+2026-05-04 07:34:35 INFO EUR.USD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=1.17423 | low=1.17268
+2026-05-04 07:34:35 INFO Brent past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=91.50 | low=88.75
+2026-05-04 07:34:35 INFO Next run in 0.43 hrs (at 20 s past the hour HKT)
+2026-05-04 07:35:48 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202606', exchange='NYMEX', currency='USD')
+2026-05-04 07:35:48 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 6: Tuesday 19:00 - Wednesday 00:55 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-04 07:35:48 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-04 07:35:48 INFO WhatsApp: +85266911989
+2026-05-04 07:35:54 INFO XAUUSD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=4641.57 | low=4609.21
+2026-05-04 07:35:55 INFO XAGUSD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=76.940 | low=73.770
+2026-05-04 07:35:55 INFO AUD.USD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=0.72206 | low=0.72108
+2026-05-04 07:35:56 INFO EUR.USD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=1.17423 | low=1.17268
+2026-05-04 07:35:58 WARNING Brent past hour HL | no bar data
+2026-05-04 07:35:58 INFO Next run in 0.41 hrs (at 20 s past the hour HKT)
+2026-05-04 07:37:42 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202609', exchange='NYMEX', currency='USD')
+2026-05-04 07:37:42 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 6: Tuesday 19:00 - Wednesday 00:55 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-04 07:37:42 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-04 07:37:42 INFO WhatsApp: +85266911989
+2026-05-04 07:37:49 INFO XAUUSD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=4641.57 | low=4609.21
+2026-05-04 07:37:49 INFO XAGUSD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=76.940 | low=73.770
+2026-05-04 07:37:50 INFO AUD.USD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=0.72206 | low=0.72108
+2026-05-04 07:37:50 INFO EUR.USD past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=1.17423 | low=1.17268
+2026-05-04 07:37:51 INFO Brent past hour HL | bar_start=2026-05-04 06:00:00+08:00 | high=96.83 | low=93.92
+2026-05-04 07:37:51 INFO Next run in 0.37 hrs (at 20 s past the hour HKT)
+2026-05-04 08:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=4621.04 | low=4611.47
+2026-05-04 08:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=75.980 | low=75.610
+2026-05-04 08:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=0.72147 | low=0.72089
+2026-05-04 08:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=1.17334 | low=1.17251
+2026-05-04 08:00:30 INFO Brent past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=97.24 | low=96.38
+2026-05-04 08:00:51 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-04 08:36:33 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-04 08:36:33 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 6: Tuesday 19:00 - Wednesday 00:55 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-04 08:36:33 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-04 08:36:33 INFO WhatsApp: +85266911989
+2026-05-04 08:36:40 INFO XAUUSD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=4621.04 | low=4611.47
+2026-05-04 08:36:41 INFO XAGUSD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=75.980 | low=75.610
+2026-05-04 08:36:41 INFO AUD.USD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=0.72147 | low=0.72089
+2026-05-04 08:36:42 INFO EUR.USD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=1.17334 | low=1.17251
+2026-05-04 08:36:44 INFO Brent past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=108.22 | low=107.32
+2026-05-04 08:36:44 INFO Next run in 0.39 hrs (at 20 s past the hour HKT)
+2026-05-04 08:37:52 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-04 08:37:52 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 6: Tuesday 19:00 - Wednesday 00:55 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-04 08:37:52 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-04 08:37:52 INFO WhatsApp: +85266911989
+2026-05-04 08:37:58 INFO XAUUSD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=4621.04 | low=4611.47
+2026-05-04 08:37:59 INFO XAGUSD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=75.980 | low=75.610
+2026-05-04 08:37:59 INFO AUD.USD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=0.72147 | low=0.72089
+2026-05-04 08:38:00 INFO EUR.USD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=1.17334 | low=1.17251
+2026-05-04 08:38:00 INFO Brent past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=106.87 | low=105.98
+2026-05-04 08:38:00 INFO Next run in 0.37 hrs (at 20 s past the hour HKT)
+2026-05-04 08:39:11 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-04 08:39:11 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 6: Tuesday 19:00 - Wednesday 00:55 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-04 08:39:11 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-04 08:39:11 INFO WhatsApp: +85266911989
+2026-05-04 08:39:17 INFO XAUUSD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=4621.04 | low=4611.47
+2026-05-04 08:39:18 INFO XAGUSD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=75.980 | low=75.610
+2026-05-04 08:39:18 INFO AUD.USD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=0.72147 | low=0.72089
+2026-05-04 08:39:19 INFO EUR.USD past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=1.17334 | low=1.17251
+2026-05-04 08:39:19 INFO Brent past hour HL | bar_start=2026-05-04 07:00:00+08:00 | high=107.35 | low=106.46
+2026-05-04 08:39:19 INFO Next run in 0.35 hrs (at 20 s past the hour HKT)
+2026-05-04 09:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-04 08:00:00+08:00 | high=4616.49 | low=4602.13
+2026-05-04 09:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-04 08:00:00+08:00 | high=75.820 | low=75.310
+2026-05-04 09:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-04 08:00:00+08:00 | high=0.72131 | low=0.72059
+2026-05-04 09:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-04 08:00:00+08:00 | high=1.17289 | low=1.17216
+2026-05-04 09:00:30 INFO Brent past hour HL | bar_start=2026-05-04 08:00:00+08:00 | high=107.93 | low=106.66
+2026-05-04 09:00:50 INFO Next run in 3.99 hrs (at 20 s past the hour HKT)
+2026-05-04 13:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-04 12:00:00+08:00 | high=4615.54 | low=4605.13
+2026-05-04 13:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-04 12:00:00+08:00 | high=75.770 | low=75.370
+2026-05-04 13:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-04 12:00:00+08:00 | high=0.72145 | low=0.72067
+2026-05-04 13:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-04 12:00:00+08:00 | high=1.17382 | low=1.17275
+2026-05-04 13:00:30 INFO Brent past hour HL | bar_start=2026-05-04 12:00:00+08:00 | high=107.59 | low=106.96
+2026-05-04 13:00:49 INFO Next run in 5.99 hrs (at 20 s past the hour HKT)
+2026-05-04 19:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-04 18:00:00+08:00 | high=4576.03 | low=4525.99
+2026-05-04 19:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-04 18:00:00+08:00 | high=74.330 | low=72.200
+2026-05-04 19:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-04 18:00:00+08:00 | high=0.71970 | low=0.71682
+2026-05-04 19:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-04 18:00:00+08:00 | high=1.17174 | low=1.16888
+2026-05-04 19:00:30 INFO Brent past hour HL | bar_start=2026-05-04 18:00:00+08:00 | high=113.38 | low=108.86
+2026-05-04 19:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-04 20:00:33 WARNING XAU spot unavailable; omitting spot in message
+2026-05-04 20:00:33 INFO XAUUSD past hour HL | bar_start=2026-05-04 19:00:00+08:00 | high=4570.87 | low=4551.62
+2026-05-04 20:00:33 INFO XAGUSD past hour HL | bar_start=2026-05-04 19:00:00+08:00 | high=73.650 | low=73.000
+2026-05-04 20:00:34 INFO AUD.USD past hour HL | bar_start=2026-05-04 19:00:00+08:00 | high=0.71888 | low=0.71758
+2026-05-04 20:00:35 INFO EUR.USD past hour HL | bar_start=2026-05-04 19:00:00+08:00 | high=1.17087 | low=1.16928
+2026-05-04 20:00:38 INFO Brent past hour HL | bar_start=2026-05-04 19:00:00+08:00 | high=111.83 | low=110.64
+2026-05-04 20:00:57 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-04 21:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-04 20:00:00+08:00 | high=4579.50 | low=4559.38
+2026-05-04 21:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-04 20:00:00+08:00 | high=74.280 | low=73.330
+2026-05-04 21:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-04 20:00:00+08:00 | high=0.71917 | low=0.71784
+2026-05-04 21:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-04 20:00:00+08:00 | high=1.17125 | low=1.16920
+2026-05-04 21:00:30 INFO Brent past hour HL | bar_start=2026-05-04 20:00:00+08:00 | high=110.51 | low=109.08
+2026-05-04 21:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-04 22:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-04 21:00:00+08:00 | high=4575.98 | low=4555.78
+2026-05-04 22:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-04 21:00:00+08:00 | high=74.070 | low=73.250
+2026-05-04 22:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-04 21:00:00+08:00 | high=0.71962 | low=0.71778
+2026-05-04 22:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-04 21:00:00+08:00 | high=1.17179 | low=1.17020
+2026-05-04 22:00:31 INFO Brent past hour HL | bar_start=2026-05-04 21:00:00+08:00 | high=111.11 | low=108.87
+2026-05-04 22:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-04 23:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-04 22:00:00+08:00 | high=4583.31 | low=4553.68
+2026-05-04 23:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-04 22:00:00+08:00 | high=74.680 | low=73.600
+2026-05-04 23:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-04 22:00:00+08:00 | high=0.71913 | low=0.71820
+2026-05-04 23:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-04 22:00:00+08:00 | high=1.17165 | low=1.17043
+2026-05-04 23:00:30 INFO Brent past hour HL | bar_start=2026-05-04 22:00:00+08:00 | high=110.72 | low=109.00
+2026-05-04 23:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-05 00:00:29 INFO XAUUSD past hour HL | bar_start=2026-05-04 23:00:00+08:00 | high=4566.21 | low=4514.11
+2026-05-05 00:00:29 INFO XAGUSD past hour HL | bar_start=2026-05-04 23:00:00+08:00 | high=74.050 | low=72.580
+2026-05-05 00:00:30 INFO AUD.USD past hour HL | bar_start=2026-05-04 23:00:00+08:00 | high=0.71889 | low=0.71623
+2026-05-05 00:00:31 INFO EUR.USD past hour HL | bar_start=2026-05-04 23:00:00+08:00 | high=1.17156 | low=1.16941
+2026-05-05 00:00:33 INFO Brent past hour HL | bar_start=2026-05-04 23:00:00+08:00 | high=113.52 | low=110.85
+2026-05-05 00:00:52 INFO Next run in 7.99 hrs (at 20 s past the hour HKT)
+2026-05-05 08:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-05 07:00:00+08:00 | high=4521.74 | low=4516.35
+2026-05-05 08:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-05 07:00:00+08:00 | high=72.720 | low=72.540
+2026-05-05 08:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-05 07:00:00+08:00 | high=0.71688 | low=0.71669
+2026-05-05 08:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-05 07:00:00+08:00 | high=1.16929 | low=1.16898
+2026-05-05 08:00:29 INFO Brent past hour HL | bar_start=2026-05-05 07:00:00+08:00 | high=113.16 | low=112.89
+2026-05-05 08:00:47 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-05 09:00:24 INFO XAUUSD past hour HL | bar_start=2026-05-05 08:00:00+08:00 | high=4530.44 | low=4513.71
+2026-05-05 09:00:25 INFO XAGUSD past hour HL | bar_start=2026-05-05 08:00:00+08:00 | high=72.880 | low=72.410
+2026-05-05 09:00:25 INFO AUD.USD past hour HL | bar_start=2026-05-05 08:00:00+08:00 | high=0.71715 | low=0.71579
+2026-05-05 09:00:26 INFO EUR.USD past hour HL | bar_start=2026-05-05 08:00:00+08:00 | high=1.16938 | low=1.16851
+2026-05-05 09:00:26 INFO Brent past hour HL | bar_start=2026-05-05 08:00:00+08:00 | high=113.16 | low=112.47
+2026-05-05 09:00:45 INFO Next run in 3.99 hrs (at 20 s past the hour HKT)
+2026-05-05 13:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-05 12:00:00+08:00 | high=4536.68 | low=4528.19
+2026-05-05 13:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-05 12:00:00+08:00 | high=72.900 | low=72.680
+2026-05-05 13:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-05 12:00:00+08:00 | high=0.71710 | low=0.71515
+2026-05-05 13:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-05 12:00:00+08:00 | high=1.16874 | low=1.16769
+2026-05-05 13:00:28 INFO Brent past hour HL | bar_start=2026-05-05 12:00:00+08:00 | high=112.34 | low=111.85
+2026-05-05 13:00:46 INFO Next run in 5.99 hrs (at 20 s past the hour HKT)
+2026-05-05 18:00:12 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-05 18:00:12 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 6: Tuesday 18:00 - Wednesday 00:55 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-05 18:00:12 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-05 18:00:12 INFO WhatsApp: +85266911989
+2026-05-05 18:00:18 INFO XAUUSD past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=4560.63 | low=4551.19
+2026-05-05 18:00:18 INFO XAGUSD past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=73.840 | low=73.540
+2026-05-05 18:00:19 INFO AUD.USD past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=0.71647 | low=0.71536
+2026-05-05 18:00:19 INFO EUR.USD past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=1.16929 | low=1.16813
+2026-05-05 18:00:20 INFO Brent past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=112.33 | low=111.38
+2026-05-05 18:00:20 INFO Next run in 1.00 hrs (at 20 s past the hour HKT)
+2026-05-05 18:01:44 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-05 18:01:44 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 6: Tuesday 18:00 - Wednesday 00:55 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-05 18:01:44 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-05 18:01:44 INFO WhatsApp: +85266911989
+2026-05-05 18:01:49 INFO XAUUSD past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=4560.63 | low=4551.19
+2026-05-05 18:01:50 INFO XAGUSD past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=73.840 | low=73.540
+2026-05-05 18:01:51 INFO AUD.USD past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=0.71647 | low=0.71536
+2026-05-05 18:01:51 INFO EUR.USD past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=1.16929 | low=1.16813
+2026-05-05 18:01:52 INFO Brent past hour HL | bar_start=2026-05-05 17:00:00+08:00 | high=112.33 | low=111.38
+2026-05-05 18:02:12 INFO Next run in 0.97 hrs (at 20 s past the hour HKT)
+2026-05-05 19:00:25 INFO XAUUSD past hour HL | bar_start=2026-05-05 18:00:00+08:00 | high=4557.07 | low=4540.23
+2026-05-05 19:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-05 18:00:00+08:00 | high=73.770 | low=73.380
+2026-05-05 19:00:26 INFO AUD.USD past hour HL | bar_start=2026-05-05 18:00:00+08:00 | high=0.71740 | low=0.71611
+2026-05-05 19:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-05 18:00:00+08:00 | high=1.16980 | low=1.16871
+2026-05-05 19:00:27 INFO Brent past hour HL | bar_start=2026-05-05 18:00:00+08:00 | high=112.23 | low=111.41
+2026-05-05 19:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-05 20:00:25 INFO XAUUSD past hour HL | bar_start=2026-05-05 19:00:00+08:00 | high=4564.94 | low=4540.04
+2026-05-05 20:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-05 19:00:00+08:00 | high=73.790 | low=73.260
+2026-05-05 20:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-05 19:00:00+08:00 | high=0.71745 | low=0.71630
+2026-05-05 20:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-05 19:00:00+08:00 | high=1.16946 | low=1.16833
+2026-05-05 20:00:28 INFO Brent past hour HL | bar_start=2026-05-05 19:00:00+08:00 | high=112.85 | low=111.55
+2026-05-05 20:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-05 21:00:25 INFO XAUUSD past hour HL | bar_start=2026-05-05 20:00:00+08:00 | high=4574.74 | low=4554.25
+2026-05-05 21:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-05 20:00:00+08:00 | high=74.040 | low=73.350
+2026-05-05 21:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-05 20:00:00+08:00 | high=0.71827 | low=0.71673
+2026-05-05 21:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-05 20:00:00+08:00 | high=1.16981 | low=1.16854
+2026-05-05 21:00:28 INFO Brent past hour HL | bar_start=2026-05-05 20:00:00+08:00 | high=112.03 | low=110.48
+2026-05-05 21:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-05 22:00:25 INFO XAUUSD past hour HL | bar_start=2026-05-05 21:00:00+08:00 | high=4584.96 | low=4564.44
+2026-05-05 22:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-05 21:00:00+08:00 | high=74.200 | low=73.390
+2026-05-05 22:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-05 21:00:00+08:00 | high=0.71857 | low=0.71754
+2026-05-05 22:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-05 21:00:00+08:00 | high=1.17047 | low=1.16921
+2026-05-05 22:00:28 INFO Brent past hour HL | bar_start=2026-05-05 21:00:00+08:00 | high=111.29 | low=109.96
+2026-05-05 22:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-05 23:00:25 INFO XAUUSD past hour HL | bar_start=2026-05-05 22:00:00+08:00 | high=4586.73 | low=4566.09
+2026-05-05 23:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-05 22:00:00+08:00 | high=74.010 | low=73.250
+2026-05-05 23:00:26 INFO AUD.USD past hour HL | bar_start=2026-05-05 22:00:00+08:00 | high=0.71887 | low=0.71753
+2026-05-05 23:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-05 22:00:00+08:00 | high=1.17060 | low=1.16916
+2026-05-05 23:00:27 INFO Brent past hour HL | bar_start=2026-05-05 22:00:00+08:00 | high=111.00 | low=109.14
+2026-05-05 23:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 00:00:22 WARNING IB connect attempt 1/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-05-06 00:00:22 INFO Retrying in 30 s ...
+2026-05-06 00:00:54 WARNING IB connect attempt 2/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-05-06 00:00:54 INFO Retrying in 30 s ...
+2026-05-06 00:01:26 WARNING IB connect attempt 3/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-05-06 00:01:26 WARNING IB connect/run failed, will retry next run: [WinError 1225] The remote computer refused the network connection
+2026-05-06 00:01:26 INFO Next run in 7.98 hrs (at 20 s past the hour HKT)
+2026-05-06 00:27:06 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-06 00:27:06 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 6: Tuesday 19:00 - Wednesday 04:55 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-06 00:27:06 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-06 00:27:06 INFO WhatsApp: +85266911989
+2026-05-06 00:27:15 INFO XAUUSD past hour HL | bar_start=2026-05-05 23:00:00+08:00 | high=4583.86 | low=4568.68
+2026-05-06 00:27:15 INFO XAGUSD past hour HL | bar_start=2026-05-05 23:00:00+08:00 | high=73.830 | low=73.420
+2026-05-06 00:27:16 INFO AUD.USD past hour HL | bar_start=2026-05-05 23:00:00+08:00 | high=0.71979 | low=0.71867
+2026-05-06 00:27:17 INFO EUR.USD past hour HL | bar_start=2026-05-05 23:00:00+08:00 | high=1.17136 | low=1.17012
+2026-05-06 00:27:18 INFO Brent past hour HL | bar_start=2026-05-05 23:00:00+08:00 | high=110.37 | low=108.93
+2026-05-06 00:27:18 INFO Next run in 0.55 hrs (at 20 s past the hour HKT)
+2026-05-06 01:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 00:00:00+08:00 | high=4569.05 | low=4553.82
+2026-05-06 01:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 00:00:00+08:00 | high=73.520 | low=72.840
+2026-05-06 01:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 00:00:00+08:00 | high=0.71955 | low=0.71864
+2026-05-06 01:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 00:00:00+08:00 | high=1.17089 | low=1.16981
+2026-05-06 01:00:30 INFO Brent past hour HL | bar_start=2026-05-06 00:00:00+08:00 | high=109.85 | low=109.30
+2026-05-06 01:00:50 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 02:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 01:00:00+08:00 | high=4562.81 | low=4553.47
+2026-05-06 02:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 01:00:00+08:00 | high=73.330 | low=73.010
+2026-05-06 02:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 01:00:00+08:00 | high=0.71912 | low=0.71849
+2026-05-06 02:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 01:00:00+08:00 | high=1.17042 | low=1.16962
+2026-05-06 02:00:30 INFO Brent past hour HL | bar_start=2026-05-06 01:00:00+08:00 | high=109.78 | low=108.73
+2026-05-06 02:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 03:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 02:00:00+08:00 | high=4565.87 | low=4557.76
+2026-05-06 03:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 02:00:00+08:00 | high=73.270 | low=72.940
+2026-05-06 03:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 02:00:00+08:00 | high=0.71903 | low=0.71869
+2026-05-06 03:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 02:00:00+08:00 | high=1.17010 | low=1.16972
+2026-05-06 03:00:30 INFO Brent past hour HL | bar_start=2026-05-06 02:00:00+08:00 | high=109.48 | low=108.72
+2026-05-06 03:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 04:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 03:00:00+08:00 | high=4561.63 | low=4551.66
+2026-05-06 04:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 03:00:00+08:00 | high=73.010 | low=72.790
+2026-05-06 04:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 03:00:00+08:00 | high=0.71886 | low=0.71814
+2026-05-06 04:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 03:00:00+08:00 | high=1.17013 | low=1.16942
+2026-05-06 04:00:29 INFO Brent past hour HL | bar_start=2026-05-06 03:00:00+08:00 | high=109.30 | low=108.73
+2026-05-06 04:00:47 INFO Next run in 3.99 hrs (at 20 s past the hour HKT)
+2026-05-06 08:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 07:00:00+08:00 | high=4595.93 | low=4569.73
+2026-05-06 08:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 07:00:00+08:00 | high=74.120 | low=73.170
+2026-05-06 08:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 07:00:00+08:00 | high=0.72083 | low=0.71949
+2026-05-06 08:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 07:00:00+08:00 | high=1.17256 | low=1.17053
+2026-05-06 08:00:30 INFO Brent past hour HL | bar_start=2026-05-06 07:00:00+08:00 | high=107.97 | low=106.33
+2026-05-06 08:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 09:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 08:00:00+08:00 | high=4620.16 | low=4588.40
+2026-05-06 09:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 08:00:00+08:00 | high=74.540 | low=73.610
+2026-05-06 09:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 08:00:00+08:00 | high=0.72241 | low=0.72023
+2026-05-06 09:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 08:00:00+08:00 | high=1.17216 | low=1.17113
+2026-05-06 09:00:30 INFO Brent past hour HL | bar_start=2026-05-06 08:00:00+08:00 | high=108.16 | low=106.40
+2026-05-06 09:00:48 INFO Next run in 3.99 hrs (at 20 s past the hour HKT)
+2026-05-06 11:59:49 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-06 11:59:49 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 6: Tuesday 19:00 - Wednesday 04:55 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 7: Wednesday 08:00 - Wednesday 12:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 9: Wednesday 14:00 - Thursday 00:55 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-06 11:59:49 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-06 11:59:49 INFO WhatsApp: +85266911989
+2026-05-06 11:59:56 INFO XAUUSD past hour HL | bar_start=2026-05-06 10:00:00+08:00 | high=4641.89 | low=4625.39
+2026-05-06 11:59:57 INFO XAGUSD past hour HL | bar_start=2026-05-06 10:00:00+08:00 | high=75.330 | low=74.630
+2026-05-06 11:59:57 INFO AUD.USD past hour HL | bar_start=2026-05-06 10:00:00+08:00 | high=0.72344 | low=0.72280
+2026-05-06 11:59:58 INFO EUR.USD past hour HL | bar_start=2026-05-06 10:00:00+08:00 | high=1.17248 | low=1.17157
+2026-05-06 12:00:00 INFO Brent past hour HL | bar_start=2026-05-06 10:00:00+08:00 | high=107.31 | low=107.06
+2026-05-06 12:00:00 INFO Next run in 1.01 hrs (at 20 s past the hour HKT)
+2026-05-06 12:01:52 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-06 12:01:52 INFO Schedule window 1: Monday 08:00 - Monday 12:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 3: Monday 14:00 - Tuesday 00:55 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 4: Tuesday 08:00 - Tuesday 12:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 6: Tuesday 14:00 - Wednesday 00:55 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 7: Wednesday 08:00 - Wednesday 12:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 9: Wednesday 14:00 - Thursday 00:55 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 10: Thursday 08:00 - Thursday 12:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 12: Thursday 14:00 - Friday 00:55 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 13: Friday 08:00 - Friday 12:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-06 12:01:52 INFO Schedule window 15: Friday 14:00 - Saturday 00:55 (HKT)
+2026-05-06 12:01:52 INFO WhatsApp: +85266911989
+2026-05-06 12:01:52 INFO Outside schedule window; skipping run
+2026-05-06 12:01:52 INFO Next run in 0.97 hrs (at 20 s past the hour HKT)
+2026-05-06 12:02:33 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-06 12:02:33 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 10: Thursday 08:00 - Thursday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 12: Thursday 13:00 - Friday 00:55 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-06 12:02:33 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-06 12:02:33 INFO WhatsApp: +85266911989
+2026-05-06 12:02:39 INFO XAUUSD past hour HL | bar_start=2026-05-06 11:00:00+08:00 | high=4652.07 | low=4638.55
+2026-05-06 12:02:39 INFO XAGUSD past hour HL | bar_start=2026-05-06 11:00:00+08:00 | high=75.730 | low=75.210
+2026-05-06 12:02:40 INFO AUD.USD past hour HL | bar_start=2026-05-06 11:00:00+08:00 | high=0.72425 | low=0.72321
+2026-05-06 12:02:41 INFO EUR.USD past hour HL | bar_start=2026-05-06 11:00:00+08:00 | high=1.17231 | low=1.17165
+2026-05-06 12:02:41 INFO Brent past hour HL | bar_start=2026-05-06 11:00:00+08:00 | high=107.56 | low=107.06
+2026-05-06 12:03:01 INFO Next run in 0.96 hrs (at 20 s past the hour HKT)
+2026-05-06 13:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 12:00:00+08:00 | high=4653.71 | low=4643.54
+2026-05-06 13:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 12:00:00+08:00 | high=75.840 | low=75.500
+2026-05-06 13:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 12:00:00+08:00 | high=0.72509 | low=0.72312
+2026-05-06 13:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 12:00:00+08:00 | high=1.17430 | low=1.17165
+2026-05-06 13:00:30 INFO Brent past hour HL | bar_start=2026-05-06 12:00:00+08:00 | high=107.37 | low=106.88
+2026-05-06 13:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 14:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 13:00:00+08:00 | high=4663.94 | low=4644.84
+2026-05-06 14:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 13:00:00+08:00 | high=75.970 | low=75.430
+2026-05-06 14:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 13:00:00+08:00 | high=0.72496 | low=0.72427
+2026-05-06 14:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 13:00:00+08:00 | high=1.17382 | low=1.17302
+2026-05-06 14:00:30 INFO Brent past hour HL | bar_start=2026-05-06 13:00:00+08:00 | high=108.13 | low=107.13
+2026-05-06 14:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 15:00:28 INFO XAUUSD past hour HL | bar_start=2026-05-06 14:00:00+08:00 | high=4669.75 | low=4657.12
+2026-05-06 15:00:29 INFO XAGUSD past hour HL | bar_start=2026-05-06 14:00:00+08:00 | high=75.970 | low=75.620
+2026-05-06 15:00:30 INFO AUD.USD past hour HL | bar_start=2026-05-06 14:00:00+08:00 | high=0.72495 | low=0.72410
+2026-05-06 15:00:30 INFO EUR.USD past hour HL | bar_start=2026-05-06 14:00:00+08:00 | high=1.17357 | low=1.17284
+2026-05-06 15:00:32 INFO Brent past hour HL | bar_start=2026-05-06 14:00:00+08:00 | high=107.91 | low=106.49
+2026-05-06 15:00:50 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 16:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 15:00:00+08:00 | high=4681.98 | low=4657.56
+2026-05-06 16:00:28 INFO XAGUSD past hour HL | bar_start=2026-05-06 15:00:00+08:00 | high=76.340 | low=75.690
+2026-05-06 16:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 15:00:00+08:00 | high=0.72505 | low=0.72335
+2026-05-06 16:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-06 15:00:00+08:00 | high=1.17384 | low=1.17244
+2026-05-06 16:00:30 INFO Brent past hour HL | bar_start=2026-05-06 15:00:00+08:00 | high=107.90 | low=105.79
+2026-05-06 16:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 17:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 16:00:00+08:00 | high=4702.96 | low=4671.66
+2026-05-06 17:00:28 INFO XAGUSD past hour HL | bar_start=2026-05-06 16:00:00+08:00 | high=77.210 | low=75.970
+2026-05-06 17:00:29 INFO AUD.USD past hour HL | bar_start=2026-05-06 16:00:00+08:00 | high=0.72676 | low=0.72328
+2026-05-06 17:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-06 16:00:00+08:00 | high=1.17710 | low=1.17329
+2026-05-06 17:00:31 INFO Brent past hour HL | bar_start=2026-05-06 16:00:00+08:00 | high=106.12 | low=103.27
+2026-05-06 17:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 18:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 17:00:00+08:00 | high=4708.67 | low=4689.14
+2026-05-06 18:00:28 INFO XAGUSD past hour HL | bar_start=2026-05-06 17:00:00+08:00 | high=77.270 | low=76.610
+2026-05-06 18:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 17:00:00+08:00 | high=0.72640 | low=0.72510
+2026-05-06 18:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-06 17:00:00+08:00 | high=1.17772 | low=1.17562
+2026-05-06 18:00:31 INFO Brent past hour HL | bar_start=2026-05-06 17:00:00+08:00 | high=103.36 | low=100.69
+2026-05-06 18:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 19:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 18:00:00+08:00 | high=4723.13 | low=4695.57
+2026-05-06 19:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 18:00:00+08:00 | high=77.830 | low=77.160
+2026-05-06 19:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 18:00:00+08:00 | high=0.72776 | low=0.72517
+2026-05-06 19:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-06 18:00:00+08:00 | high=1.17968 | low=1.17666
+2026-05-06 19:00:30 INFO Brent past hour HL | bar_start=2026-05-06 18:00:00+08:00 | high=100.69 | low=98.67
+2026-05-06 19:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 20:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 19:00:00+08:00 | high=4721.46 | low=4690.94
+2026-05-06 20:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 19:00:00+08:00 | high=77.800 | low=76.790
+2026-05-06 20:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 19:00:00+08:00 | high=0.72686 | low=0.72486
+2026-05-06 20:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 19:00:00+08:00 | high=1.17917 | low=1.17683
+2026-05-06 20:00:30 INFO Brent past hour HL | bar_start=2026-05-06 19:00:00+08:00 | high=98.97 | low=95.94
+2026-05-06 20:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 21:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 20:00:00+08:00 | high=4693.14 | low=4660.43
+2026-05-06 21:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 20:00:00+08:00 | high=76.930 | low=75.730
+2026-05-06 21:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 20:00:00+08:00 | high=0.72506 | low=0.72318
+2026-05-06 21:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 20:00:00+08:00 | high=1.17704 | low=1.17518
+2026-05-06 21:00:30 INFO Brent past hour HL | bar_start=2026-05-06 20:00:00+08:00 | high=103.33 | low=99.36
+2026-05-06 21:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 22:00:41 INFO XAUUSD past hour HL | bar_start=2026-05-06 21:00:00+08:00 | high=4707.82 | low=4668.88
+2026-05-06 22:00:41 INFO XAGUSD past hour HL | bar_start=2026-05-06 21:00:00+08:00 | high=77.460 | low=76.420
+2026-05-06 22:00:42 INFO AUD.USD past hour HL | bar_start=2026-05-06 21:00:00+08:00 | high=0.72411 | low=0.72291
+2026-05-06 22:00:42 INFO EUR.USD past hour HL | bar_start=2026-05-06 21:00:00+08:00 | high=1.17592 | low=1.17465
+2026-05-06 22:00:44 INFO Brent past hour HL | bar_start=2026-05-06 21:00:00+08:00 | high=103.26 | low=101.37
+2026-05-06 22:01:03 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-06 23:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-06 22:00:00+08:00 | high=4717.61 | low=4697.74
+2026-05-06 23:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-06 22:00:00+08:00 | high=77.790 | low=77.010
+2026-05-06 23:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-06 22:00:00+08:00 | high=0.72476 | low=0.72295
+2026-05-06 23:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-06 22:00:00+08:00 | high=1.17630 | low=1.17450
+2026-05-06 23:00:30 INFO Brent past hour HL | bar_start=2026-05-06 22:00:00+08:00 | high=102.85 | low=100.40
+2026-05-06 23:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 00:00:29 INFO XAUUSD past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=4705.92 | low=4687.78
+2026-05-07 00:00:30 INFO XAGUSD past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=77.570 | low=77.020
+2026-05-07 00:00:31 INFO AUD.USD past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=0.72405 | low=0.72329
+2026-05-07 00:00:31 INFO EUR.USD past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=1.17586 | low=1.17487
+2026-05-07 00:00:33 INFO Brent past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=101.99 | low=100.60
+2026-05-07 00:00:52 INFO Next run in 7.99 hrs (at 20 s past the hour HKT)
+2026-05-07 00:03:50 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-07 00:03:50 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 12: Thursday 13:00 - Friday 00:55 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-07 00:03:50 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-07 00:03:50 INFO WhatsApp: +85266911989
+2026-05-07 00:03:56 INFO XAUUSD past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=4705.92 | low=4687.78
+2026-05-07 00:03:57 INFO XAGUSD past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=77.570 | low=77.020
+2026-05-07 00:03:57 INFO AUD.USD past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=0.72405 | low=0.72329
+2026-05-07 00:03:58 INFO EUR.USD past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=1.17586 | low=1.17487
+2026-05-07 00:03:58 INFO Brent past hour HL | bar_start=2026-05-06 23:00:00+08:00 | high=101.99 | low=100.60
+2026-05-07 00:03:58 INFO Next run in 6.94 hrs (at 20 s past the hour HKT)
+2026-05-07 07:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 06:00:00+08:00 | high=4707.12 | low=4686.99
+2026-05-07 07:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 06:00:00+08:00 | high=77.630 | low=76.410
+2026-05-07 07:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 06:00:00+08:00 | high=0.72398 | low=0.72364
+2026-05-07 07:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 06:00:00+08:00 | high=1.17515 | low=1.17494
+2026-05-07 07:00:30 INFO Brent past hour HL | bar_start=2026-05-07 06:00:00+08:00 | high=101.42 | low=100.61
+2026-05-07 07:00:51 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 08:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 07:00:00+08:00 | high=4699.64 | low=4690.58
+2026-05-07 08:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 07:00:00+08:00 | high=77.770 | low=77.370
+2026-05-07 08:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 07:00:00+08:00 | high=0.72392 | low=0.72345
+2026-05-07 08:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 07:00:00+08:00 | high=1.17521 | low=1.17464
+2026-05-07 08:00:30 INFO Brent past hour HL | bar_start=2026-05-07 07:00:00+08:00 | high=101.19 | low=100.90
+2026-05-07 08:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 09:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 08:00:00+08:00 | high=4701.39 | low=4685.76
+2026-05-07 09:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 08:00:00+08:00 | high=77.600 | low=77.070
+2026-05-07 09:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 08:00:00+08:00 | high=0.72403 | low=0.72322
+2026-05-07 09:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 08:00:00+08:00 | high=1.17542 | low=1.17468
+2026-05-07 09:00:30 INFO Brent past hour HL | bar_start=2026-05-07 08:00:00+08:00 | high=101.73 | low=100.93
+2026-05-07 09:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 10:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 09:00:00+08:00 | high=4721.41 | low=4685.46
+2026-05-07 10:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 09:00:00+08:00 | high=78.290 | low=77.000
+2026-05-07 10:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 09:00:00+08:00 | high=0.72488 | low=0.72318
+2026-05-07 10:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 09:00:00+08:00 | high=1.17636 | low=1.17464
+2026-05-07 10:00:30 INFO Brent past hour HL | bar_start=2026-05-07 09:00:00+08:00 | high=101.63 | low=100.82
+2026-05-07 10:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 11:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 10:00:00+08:00 | high=4718.77 | low=4700.05
+2026-05-07 11:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 10:00:00+08:00 | high=78.290 | low=77.550
+2026-05-07 11:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 10:00:00+08:00 | high=0.72469 | low=0.72400
+2026-05-07 11:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 10:00:00+08:00 | high=1.17609 | low=1.17547
+2026-05-07 11:00:48 INFO Brent past hour HL | bar_start=2026-05-07 10:00:00+08:00 | high=101.12 | low=100.32
+2026-05-07 11:01:06 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 12:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 11:00:00+08:00 | high=4709.90 | low=4698.85
+2026-05-07 12:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 11:00:00+08:00 | high=77.980 | low=77.590
+2026-05-07 12:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 11:00:00+08:00 | high=0.72450 | low=0.72400
+2026-05-07 12:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 11:00:00+08:00 | high=1.17568 | low=1.17487
+2026-05-07 12:00:30 INFO Brent past hour HL | bar_start=2026-05-07 11:00:00+08:00 | high=101.36 | low=100.88
+2026-05-07 12:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 13:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 12:00:00+08:00 | high=4701.06 | low=4692.46
+2026-05-07 13:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 12:00:00+08:00 | high=77.740 | low=77.490
+2026-05-07 13:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 12:00:00+08:00 | high=0.72505 | low=0.72416
+2026-05-07 13:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 12:00:00+08:00 | high=1.17535 | low=1.17478
+2026-05-07 13:00:30 INFO Brent past hour HL | bar_start=2026-05-07 12:00:00+08:00 | high=101.26 | low=100.90
+2026-05-07 13:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 14:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 13:00:00+08:00 | high=4706.74 | low=4694.86
+2026-05-07 14:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 13:00:00+08:00 | high=78.000 | low=77.570
+2026-05-07 14:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 13:00:00+08:00 | high=0.72508 | low=0.72462
+2026-05-07 14:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 13:00:00+08:00 | high=1.17538 | low=1.17501
+2026-05-07 14:00:30 INFO Brent past hour HL | bar_start=2026-05-07 13:00:00+08:00 | high=101.15 | low=100.84
+2026-05-07 14:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 15:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 14:00:00+08:00 | high=4750.26 | low=4701.25
+2026-05-07 15:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 14:00:00+08:00 | high=79.000 | low=77.740
+2026-05-07 15:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 14:00:00+08:00 | high=0.72569 | low=0.72405
+2026-05-07 15:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 14:00:00+08:00 | high=1.17569 | low=1.17450
+2026-05-07 15:00:30 INFO Brent past hour HL | bar_start=2026-05-07 14:00:00+08:00 | high=101.06 | low=99.49
+2026-05-07 15:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 16:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 15:00:00+08:00 | high=4750.81 | low=4731.59
+2026-05-07 16:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 15:00:00+08:00 | high=79.800 | low=78.710
+2026-05-07 16:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 15:00:00+08:00 | high=0.72637 | low=0.72501
+2026-05-07 16:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 15:00:00+08:00 | high=1.17687 | low=1.17481
+2026-05-07 16:00:30 INFO Brent past hour HL | bar_start=2026-05-07 15:00:00+08:00 | high=100.16 | low=96.68
+2026-05-07 16:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 17:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 16:00:00+08:00 | high=4753.60 | low=4731.01
+2026-05-07 17:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 16:00:00+08:00 | high=79.900 | low=79.520
+2026-05-07 17:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 16:00:00+08:00 | high=0.72644 | low=0.72571
+2026-05-07 17:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 16:00:00+08:00 | high=1.17742 | low=1.17630
+2026-05-07 17:00:30 INFO Brent past hour HL | bar_start=2026-05-07 16:00:00+08:00 | high=100.02 | low=98.38
+2026-05-07 17:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 18:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 17:00:00+08:00 | high=4739.68 | low=4721.82
+2026-05-07 18:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 17:00:00+08:00 | high=80.320 | low=79.430
+2026-05-07 18:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 17:00:00+08:00 | high=0.72622 | low=0.72538
+2026-05-07 18:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-07 17:00:00+08:00 | high=1.17783 | low=1.17657
+2026-05-07 18:00:30 INFO Brent past hour HL | bar_start=2026-05-07 17:00:00+08:00 | high=98.56 | low=97.42
+2026-05-07 18:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 19:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 18:00:00+08:00 | high=4739.99 | low=4726.59
+2026-05-07 19:00:28 INFO XAGUSD past hour HL | bar_start=2026-05-07 18:00:00+08:00 | high=80.610 | low=80.180
+2026-05-07 19:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 18:00:00+08:00 | high=0.72640 | low=0.72557
+2026-05-07 19:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-07 18:00:00+08:00 | high=1.17762 | low=1.17649
+2026-05-07 19:00:32 INFO Brent past hour HL | bar_start=2026-05-07 18:00:00+08:00 | high=98.69 | low=97.53
+2026-05-07 19:00:51 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 20:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 19:00:00+08:00 | high=4743.84 | low=4727.40
+2026-05-07 20:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 19:00:00+08:00 | high=81.000 | low=80.300
+2026-05-07 20:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 19:00:00+08:00 | high=0.72591 | low=0.72520
+2026-05-07 20:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-07 19:00:00+08:00 | high=1.17704 | low=1.17623
+2026-05-07 20:00:31 INFO Brent past hour HL | bar_start=2026-05-07 19:00:00+08:00 | high=98.26 | low=96.95
+2026-05-07 20:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 21:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 20:00:00+08:00 | high=4752.75 | low=4733.35
+2026-05-07 21:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 20:00:00+08:00 | high=81.700 | low=80.910
+2026-05-07 21:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 20:00:00+08:00 | high=0.72599 | low=0.72506
+2026-05-07 21:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-07 20:00:00+08:00 | high=1.17780 | low=1.17674
+2026-05-07 21:00:30 INFO Brent past hour HL | bar_start=2026-05-07 20:00:00+08:00 | high=97.47 | low=95.32
+2026-05-07 21:00:48 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 22:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 21:00:00+08:00 | high=4758.38 | low=4731.28
+2026-05-07 22:00:28 INFO XAGUSD past hour HL | bar_start=2026-05-07 21:00:00+08:00 | high=81.500 | low=80.850
+2026-05-07 22:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 21:00:00+08:00 | high=0.72548 | low=0.72450
+2026-05-07 22:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-07 21:00:00+08:00 | high=1.17772 | low=1.17666
+2026-05-07 22:00:30 INFO Brent past hour HL | bar_start=2026-05-07 21:00:00+08:00 | high=97.79 | low=96.10
+2026-05-07 22:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-07 23:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-07 22:00:00+08:00 | high=4763.55 | low=4741.16
+2026-05-07 23:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-07 22:00:00+08:00 | high=82.140 | low=81.230
+2026-05-07 23:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-07 22:00:00+08:00 | high=0.72583 | low=0.72427
+2026-05-07 23:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-07 22:00:00+08:00 | high=1.17774 | low=1.17640
+2026-05-07 23:00:30 INFO Brent past hour HL | bar_start=2026-05-07 22:00:00+08:00 | high=96.86 | low=95.55
+2026-05-07 23:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 00:00:22 WARNING IB connect attempt 1/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-05-08 00:00:22 INFO Retrying in 30 s ...
+2026-05-08 00:00:54 WARNING IB connect attempt 2/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-05-08 00:00:54 INFO Retrying in 30 s ...
+2026-05-08 00:01:26 WARNING IB connect attempt 3/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-05-08 00:01:26 WARNING IB connect/run failed, will retry next run: [WinError 1225] The remote computer refused the network connection
+2026-05-08 00:01:26 INFO Next run in 7.98 hrs (at 20 s past the hour HKT)
+2026-05-08 00:08:35 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-08 00:08:35 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 12: Thursday 13:00 - Friday 02:55 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-08 00:08:35 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-08 00:08:35 INFO WhatsApp: +85266911989
+2026-05-08 00:08:39 WARNING IB connect attempt 1/3 failed: 
+2026-05-08 00:08:39 INFO Retrying in 30 s ...
+2026-05-08 00:08:45 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-08 00:08:45 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 12: Thursday 13:00 - Friday 02:55 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-08 00:08:45 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-08 00:08:45 INFO WhatsApp: +85266911989
+2026-05-08 00:08:53 INFO XAUUSD past hour HL | bar_start=2026-05-07 23:00:00+08:00 | high=4764.84 | low=4726.51
+2026-05-08 00:08:54 INFO XAGUSD past hour HL | bar_start=2026-05-07 23:00:00+08:00 | high=82.030 | low=80.360
+2026-05-08 00:08:55 INFO AUD.USD past hour HL | bar_start=2026-05-07 23:00:00+08:00 | high=0.72583 | low=0.72391
+2026-05-08 00:08:56 INFO EUR.USD past hour HL | bar_start=2026-05-07 23:00:00+08:00 | high=1.17780 | low=1.17631
+2026-05-08 00:08:56 INFO Brent past hour HL | bar_start=2026-05-07 23:00:00+08:00 | high=98.46 | low=96.43
+2026-05-08 00:09:17 INFO Next run in 0.85 hrs (at 20 s past the hour HKT)
+2026-05-08 01:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-08 00:00:00+08:00 | high=4729.89 | low=4704.50
+2026-05-08 01:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 00:00:00+08:00 | high=80.510 | low=79.370
+2026-05-08 01:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-08 00:00:00+08:00 | high=0.72428 | low=0.72329
+2026-05-08 01:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 00:00:00+08:00 | high=1.17660 | low=1.17565
+2026-05-08 01:00:30 INFO Brent past hour HL | bar_start=2026-05-08 00:00:00+08:00 | high=99.94 | low=98.30
+2026-05-08 01:00:49 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 02:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-08 01:00:00+08:00 | high=4719.69 | low=4687.74
+2026-05-08 02:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 01:00:00+08:00 | high=80.060 | low=78.840
+2026-05-08 02:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-08 01:00:00+08:00 | high=0.72418 | low=0.72249
+2026-05-08 02:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 01:00:00+08:00 | high=1.17610 | low=1.17358
+2026-05-08 02:00:30 INFO Brent past hour HL | bar_start=2026-05-08 01:00:00+08:00 | high=101.67 | low=99.66
+2026-05-08 02:00:49 INFO Next run in 5.99 hrs (at 20 s past the hour HKT)
+2026-05-08 08:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-08 07:00:00+08:00 | high=4705.74 | low=4684.80
+2026-05-08 08:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 07:00:00+08:00 | high=79.290 | low=78.520
+2026-05-08 08:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-08 07:00:00+08:00 | high=0.72093 | low=0.72030
+2026-05-08 08:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 07:00:00+08:00 | high=1.17315 | low=1.17246
+2026-05-08 08:00:29 INFO Brent past hour HL | bar_start=2026-05-08 07:00:00+08:00 | high=101.83 | low=101.35
+2026-05-08 08:00:47 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 09:00:25 INFO XAUUSD past hour HL | bar_start=2026-05-08 08:00:00+08:00 | high=4709.67 | low=4694.09
+2026-05-08 09:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-08 08:00:00+08:00 | high=79.480 | low=78.820
+2026-05-08 09:00:26 INFO AUD.USD past hour HL | bar_start=2026-05-08 08:00:00+08:00 | high=0.72120 | low=0.72003
+2026-05-08 09:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-08 08:00:00+08:00 | high=1.17349 | low=1.17266
+2026-05-08 09:00:27 INFO Brent past hour HL | bar_start=2026-05-08 08:00:00+08:00 | high=102.12 | low=101.05
+2026-05-08 09:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 10:00:25 INFO XAUUSD past hour HL | bar_start=2026-05-08 09:00:00+08:00 | high=4725.63 | low=4700.53
+2026-05-08 10:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-08 09:00:00+08:00 | high=80.220 | low=79.080
+2026-05-08 10:00:26 INFO AUD.USD past hour HL | bar_start=2026-05-08 09:00:00+08:00 | high=0.72147 | low=0.72074
+2026-05-08 10:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-08 09:00:00+08:00 | high=1.17337 | low=1.17270
+2026-05-08 10:00:27 INFO Brent past hour HL | bar_start=2026-05-08 09:00:00+08:00 | high=101.33 | low=100.15
+2026-05-08 10:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 11:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-08 10:00:00+08:00 | high=4732.80 | low=4707.25
+2026-05-08 11:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-08 10:00:00+08:00 | high=80.170 | low=79.360
+2026-05-08 11:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-08 10:00:00+08:00 | high=0.72139 | low=0.72041
+2026-05-08 11:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-08 10:00:00+08:00 | high=1.17327 | low=1.17246
+2026-05-08 11:00:28 INFO Brent past hour HL | bar_start=2026-05-08 10:00:00+08:00 | high=101.08 | low=100.07
+2026-05-08 11:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 12:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-08 11:00:00+08:00 | high=4731.35 | low=4711.32
+2026-05-08 12:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 11:00:00+08:00 | high=80.160 | low=79.560
+2026-05-08 12:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-08 11:00:00+08:00 | high=0.72211 | low=0.72097
+2026-05-08 12:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 11:00:00+08:00 | high=1.17338 | low=1.17269
+2026-05-08 12:00:28 INFO Brent past hour HL | bar_start=2026-05-08 11:00:00+08:00 | high=100.51 | low=100.15
+2026-05-08 12:00:47 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 13:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-08 12:00:00+08:00 | high=4723.34 | low=4709.09
+2026-05-08 13:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-08 12:00:00+08:00 | high=79.970 | low=79.300
+2026-05-08 13:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-08 12:00:00+08:00 | high=0.72221 | low=0.72139
+2026-05-08 13:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-08 12:00:00+08:00 | high=1.17359 | low=1.17270
+2026-05-08 13:00:28 INFO Brent past hour HL | bar_start=2026-05-08 12:00:00+08:00 | high=101.07 | low=100.32
+2026-05-08 13:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 14:00:25 INFO XAUUSD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=4731.43 | low=4709.68
+2026-05-08 14:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=80.540 | low=79.600
+2026-05-08 14:00:26 INFO AUD.USD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=0.72265 | low=0.72178
+2026-05-08 14:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=1.17388 | low=1.17331
+2026-05-08 14:00:27 INFO Brent past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=100.70 | low=100.05
+2026-05-08 14:00:46 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 14:04:55 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-08 14:04:55 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 12: Thursday 13:00 - Friday 02:55  (HKT)
+2026-05-08 14:04:55 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-08 14:04:55 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-08 14:04:55 INFO WhatsApp: +85266911989
+2026-05-08 14:05:04 INFO XAUUSD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=4731.43 | low=4709.68
+2026-05-08 14:05:05 INFO XAGUSD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=80.540 | low=79.600
+2026-05-08 14:05:05 INFO AUD.USD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=0.72265 | low=0.72178
+2026-05-08 14:05:06 INFO EUR.USD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=1.17388 | low=1.17331
+2026-05-08 14:05:07 INFO Brent past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=100.70 | low=100.05
+2026-05-08 14:13:47 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-08 14:13:47 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 12: Thursday 13:00 - Friday 02:55  (HKT)
+2026-05-08 14:13:47 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-08 14:13:47 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-08 14:13:47 INFO WhatsApp: +85266911989
+2026-05-08 14:13:54 INFO XAUUSD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=4731.43 | low=4709.68
+2026-05-08 14:13:55 INFO XAGUSD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=80.540 | low=79.600
+2026-05-08 14:13:55 INFO AUD.USD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=0.72265 | low=0.72178
+2026-05-08 14:13:56 INFO EUR.USD past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=1.17388 | low=1.17331
+2026-05-08 14:13:58 INFO Brent past hour HL | bar_start=2026-05-08 13:00:00+08:00 | high=100.70 | low=100.05
+2026-05-08 14:13:58 INFO Next run in 0.77 hrs (at 20 s past the hour HKT)
+2026-05-08 15:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=4734.73 | low=4712.79
+2026-05-08 15:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=80.720 | low=80.070
+2026-05-08 15:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=0.72307 | low=0.72222
+2026-05-08 15:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=1.17483 | low=1.17371
+2026-05-08 15:00:31 INFO Brent past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=100.55 | low=98.92
+2026-05-08 15:00:51 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 15:07:36 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-08 15:07:36 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 12: Thursday 13:00 - Friday 02:55  (HKT)
+2026-05-08 15:07:36 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-08 15:07:36 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-08 15:07:36 INFO WhatsApp: +85266911989
+2026-05-08 15:07:43 INFO XAUUSD past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=4734.73 | low=4712.79
+2026-05-08 15:07:44 INFO XAGUSD past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=80.720 | low=80.070
+2026-05-08 15:07:44 INFO AUD.USD past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=0.72307 | low=0.72222
+2026-05-08 15:07:45 INFO EUR.USD past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=1.17483 | low=1.17371
+2026-05-08 15:07:47 INFO Brent past hour HL | bar_start=2026-05-08 14:00:00+08:00 | high=100.55 | low=98.92
+2026-05-08 15:07:47 INFO Next run in 0.88 hrs (at 20 s past the hour HKT)
+2026-05-08 16:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=4726.56 | low=4697.18
+2026-05-08 16:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=80.360 | low=79.330
+2026-05-08 16:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=0.72274 | low=0.72215
+2026-05-08 16:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=1.17481 | low=1.17418
+2026-05-08 16:00:30 INFO Brent past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=100.72 | low=99.46
+2026-05-08 16:00:51 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 16:12:43 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-08 16:12:43 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 12: Thursday 13:00 - Friday 02:55  (HKT)
+2026-05-08 16:12:43 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-08 16:12:43 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-08 16:12:43 INFO WhatsApp: +85266911989
+2026-05-08 16:12:50 INFO XAUUSD past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=4726.56 | low=4697.18
+2026-05-08 16:12:51 INFO XAGUSD past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=80.360 | low=79.330
+2026-05-08 16:12:51 INFO AUD.USD past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=0.72274 | low=0.72215
+2026-05-08 16:12:52 INFO EUR.USD past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=1.17481 | low=1.17418
+2026-05-08 16:12:53 INFO Brent past hour HL | bar_start=2026-05-08 15:00:00+08:00 | high=100.72 | low=99.46
+2026-05-08 16:12:53 INFO Next run in 0.79 hrs (at 20 s past the hour HKT)
+2026-05-08 17:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-08 16:00:00+08:00 | high=4723.63 | low=4706.64
+2026-05-08 17:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 16:00:00+08:00 | high=80.340 | low=79.790
+2026-05-08 17:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-08 16:00:00+08:00 | high=0.72363 | low=0.72223
+2026-05-08 17:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 16:00:00+08:00 | high=1.17660 | low=1.17421
+2026-05-08 17:00:30 INFO Brent past hour HL | bar_start=2026-05-08 16:00:00+08:00 | high=100.58 | low=99.07
+2026-05-08 17:00:52 INFO Fallback Enter key sent to confirm WhatsApp send
+2026-05-08 17:00:52 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 18:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=4723.01 | low=4707.67
+2026-05-08 18:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=80.600 | low=80.030
+2026-05-08 18:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=0.72411 | low=0.72308
+2026-05-08 18:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=1.17736 | low=1.17633
+2026-05-08 18:00:30 INFO Brent past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=99.70 | low=98.74
+2026-05-08 18:00:50 INFO Fallback Enter key sent to confirm WhatsApp send
+2026-05-08 18:00:50 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 18:05:45 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-08 18:05:45 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 12: Thursday 13:00 - Friday 02:55  (HKT)
+2026-05-08 18:05:45 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-08 18:05:45 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-08 18:05:45 INFO WhatsApp: +85266911989
+2026-05-08 18:05:51 INFO XAUUSD past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=4723.01 | low=4707.67
+2026-05-08 18:05:52 INFO XAGUSD past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=80.600 | low=80.030
+2026-05-08 18:05:53 INFO AUD.USD past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=0.72411 | low=0.72308
+2026-05-08 18:05:53 INFO EUR.USD past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=1.17736 | low=1.17633
+2026-05-08 18:05:54 INFO Brent past hour HL | bar_start=2026-05-08 17:00:00+08:00 | high=100.05 | low=98.74
+2026-05-08 18:05:54 INFO Next run in 0.91 hrs (at 20 s past the hour HKT)
+2026-05-08 19:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=4728.01 | low=4711.21
+2026-05-08 19:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=80.870 | low=80.180
+2026-05-08 19:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=0.72415 | low=0.72329
+2026-05-08 19:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=1.17727 | low=1.17614
+2026-05-08 19:00:30 INFO Brent past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=100.15 | low=99.08
+2026-05-08 19:00:35 INFO Fallback Enter key sent to confirm WhatsApp send
+2026-05-08 19:00:35 INFO Next run in 1.00 hrs (at 20 s past the hour HKT)
+2026-05-08 19:04:27 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-08 19:04:27 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 12: Thursday 13:00 - Friday 02:55  (HKT)
+2026-05-08 19:04:27 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-08 19:04:27 INFO Schedule window 15: Friday 13:00 - Saturday 00:55 (HKT)
+2026-05-08 19:04:27 INFO WhatsApp: +85266911989
+2026-05-08 19:04:32 INFO XAUUSD past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=4728.01 | low=4711.21
+2026-05-08 19:04:33 INFO XAGUSD past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=80.870 | low=80.180
+2026-05-08 19:04:34 INFO AUD.USD past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=0.72415 | low=0.72329
+2026-05-08 19:04:34 INFO EUR.USD past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=1.17727 | low=1.17614
+2026-05-08 19:04:35 INFO Brent past hour HL | bar_start=2026-05-08 18:00:00+08:00 | high=100.15 | low=99.08
+2026-05-08 19:04:35 INFO Next run in 0.93 hrs (at 20 s past the hour HKT)
+2026-05-08 20:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-08 19:00:00+08:00 | high=4727.45 | low=4713.64
+2026-05-08 20:00:26 INFO XAGUSD past hour HL | bar_start=2026-05-08 19:00:00+08:00 | high=80.800 | low=80.470
+2026-05-08 20:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-08 19:00:00+08:00 | high=0.72400 | low=0.72316
+2026-05-08 20:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-08 19:00:00+08:00 | high=1.17691 | low=1.17620
+2026-05-08 20:00:29 INFO Brent past hour HL | bar_start=2026-05-08 19:00:00+08:00 | high=99.97 | low=99.06
+2026-05-08 20:00:36 INFO Fallback Enter key sent (attempt 1)
+2026-05-08 20:00:36 INFO Next run in 1.00 hrs (at 20 s past the hour HKT)
+2026-05-08 21:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-08 20:00:00+08:00 | high=4731.98 | low=4703.01
+2026-05-08 21:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 20:00:00+08:00 | high=81.490 | low=80.350
+2026-05-08 21:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-08 20:00:00+08:00 | high=0.72489 | low=0.72284
+2026-05-08 21:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 20:00:00+08:00 | high=1.17788 | low=1.17578
+2026-05-08 21:00:30 INFO Brent past hour HL | bar_start=2026-05-08 20:00:00+08:00 | high=99.91 | low=99.12
+2026-05-08 21:00:37 INFO Fallback Enter key sent (attempt 1)
+2026-05-08 21:00:37 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 22:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-08 21:00:00+08:00 | high=4748.08 | low=4716.71
+2026-05-08 22:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 21:00:00+08:00 | high=81.580 | low=80.530
+2026-05-08 22:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-08 21:00:00+08:00 | high=0.72484 | low=0.72289
+2026-05-08 22:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 21:00:00+08:00 | high=1.17871 | low=1.17664
+2026-05-08 22:00:30 INFO Brent past hour HL | bar_start=2026-05-08 21:00:00+08:00 | high=100.02 | low=98.82
+2026-05-08 22:00:37 INFO Fallback Enter key sent (attempt 1)
+2026-05-08 22:00:37 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-08 23:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-08 22:00:00+08:00 | high=4749.68 | low=4713.51
+2026-05-08 23:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-08 22:00:00+08:00 | high=81.550 | low=80.480
+2026-05-08 23:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-08 22:00:00+08:00 | high=0.72459 | low=0.72361
+2026-05-08 23:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-08 22:00:00+08:00 | high=1.17797 | low=1.17673
+2026-05-08 23:00:29 INFO Brent past hour HL | bar_start=2026-05-08 22:00:00+08:00 | high=101.02 | low=99.33
+2026-05-08 23:00:36 INFO Fallback Enter key sent (attempt 1)
+2026-05-08 23:00:36 INFO Next run in 1.00 hrs (at 20 s past the hour HKT)
+2026-05-09 00:00:28 INFO XAUUSD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=4721.02 | low=4702.13
+2026-05-09 00:00:29 INFO XAGUSD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=80.820 | low=79.890
+2026-05-09 00:00:29 INFO AUD.USD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=0.72464 | low=0.72369
+2026-05-09 00:00:30 INFO EUR.USD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=1.17786 | low=1.17670
+2026-05-09 00:00:32 INFO Brent past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=101.41 | low=100.35
+2026-05-09 00:00:39 INFO Fallback Enter key sent (attempt 1)
+2026-05-09 00:00:39 INFO Next run in 55.99 hrs (at 20 s past the hour HKT)
+2026-05-09 00:06:14 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-09 00:06:14 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 12: Thursday 13:00 - Friday 02:55  (HKT)
+2026-05-09 00:06:14 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-09 00:06:14 INFO Schedule window 15: Friday 13:00 - Saturday 04:55 (HKT)
+2026-05-09 00:06:14 INFO WhatsApp: +85266911989
+2026-05-09 00:06:20 INFO XAUUSD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=4721.02 | low=4702.13
+2026-05-09 00:06:20 INFO XAGUSD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=80.820 | low=79.890
+2026-05-09 00:06:21 INFO AUD.USD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=0.72464 | low=0.72369
+2026-05-09 00:06:21 INFO EUR.USD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=1.17786 | low=1.17670
+2026-05-09 00:06:22 INFO Brent past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=101.41 | low=100.35
+2026-05-09 00:06:29 INFO Fallback Enter key sent (attempt 1)
+2026-05-09 00:06:29 INFO Next run in 0.90 hrs (at 20 s past the hour HKT)
+2026-05-09 00:08:14 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-09 00:08:14 INFO Schedule window 1: Monday 08:00 - Monday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 12: Thursday 13:00 - Friday 02:55  (HKT)
+2026-05-09 00:08:14 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-09 00:08:14 INFO Schedule window 15: Friday 13:00 - Saturday 04:55 (HKT)
+2026-05-09 00:08:14 INFO WhatsApp: +85266911989
+2026-05-09 00:08:19 INFO XAUUSD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=4721.02 | low=4702.13
+2026-05-09 00:08:20 INFO XAGUSD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=80.820 | low=79.890
+2026-05-09 00:08:20 INFO AUD.USD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=0.72464 | low=0.72369
+2026-05-09 00:08:22 INFO EUR.USD past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=1.17786 | low=1.17670
+2026-05-09 00:08:22 INFO Brent past hour HL | bar_start=2026-05-08 23:00:00+08:00 | high=101.41 | low=100.35
+2026-05-09 00:08:22 INFO Next run in 0.87 hrs (at 20 s past the hour HKT)
+2026-05-09 01:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-09 00:00:00+08:00 | high=4720.31 | low=4705.51
+2026-05-09 01:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-09 00:00:00+08:00 | high=80.540 | low=79.870
+2026-05-09 01:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-09 00:00:00+08:00 | high=0.72464 | low=0.72403
+2026-05-09 01:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-09 00:00:00+08:00 | high=1.17786 | low=1.17708
+2026-05-09 01:00:30 INFO Brent past hour HL | bar_start=2026-05-09 00:00:00+08:00 | high=100.94 | low=100.40
+2026-05-09 01:00:37 INFO Fallback Enter key sent (attempt 1)
+2026-05-09 01:00:38 INFO Closed WhatsApp tab (Ctrl+W)
+2026-05-09 01:00:38 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-09 02:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-09 01:00:00+08:00 | high=4722.77 | low=4712.21
+2026-05-09 02:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-09 01:00:00+08:00 | high=80.500 | low=80.050
+2026-05-09 02:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-09 01:00:00+08:00 | high=0.72451 | low=0.72403
+2026-05-09 02:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-09 01:00:00+08:00 | high=1.17763 | low=1.17706
+2026-05-09 02:00:31 INFO Brent past hour HL | bar_start=2026-05-09 01:00:00+08:00 | high=100.82 | low=100.06
+2026-05-09 02:00:38 INFO Fallback Enter key sent (attempt 1)
+2026-05-09 02:00:39 INFO Closed WhatsApp tab (Ctrl+W)
+2026-05-09 02:00:39 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-09 03:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-09 02:00:00+08:00 | high=4729.10 | low=4720.03
+2026-05-09 03:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-09 02:00:00+08:00 | high=80.890 | low=80.360
+2026-05-09 03:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-09 02:00:00+08:00 | high=0.72479 | low=0.72405
+2026-05-09 03:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-09 02:00:00+08:00 | high=1.17817 | low=1.17708
+2026-05-09 03:00:29 INFO Brent past hour HL | bar_start=2026-05-09 02:00:00+08:00 | high=100.65 | low=99.44
+2026-05-09 03:00:37 INFO Fallback Enter key sent (attempt 1)
+2026-05-09 03:00:37 INFO Closed WhatsApp tab (Ctrl+W)
+2026-05-09 03:00:37 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-09 04:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-09 03:00:00+08:00 | high=4726.90 | low=4721.08
+2026-05-09 04:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-09 03:00:00+08:00 | high=80.810 | low=80.420
+2026-05-09 04:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-09 03:00:00+08:00 | high=0.72482 | low=0.72420
+2026-05-09 04:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-09 03:00:00+08:00 | high=1.17833 | low=1.17767
+2026-05-09 04:00:28 INFO Brent past hour HL | bar_start=2026-05-09 03:00:00+08:00 | high=100.57 | low=99.69
+2026-05-09 04:00:36 INFO Fallback Enter key sent (attempt 1)
+2026-05-09 04:00:37 INFO Closed WhatsApp tab (Ctrl+W)
+2026-05-09 04:00:37 INFO Next run in 51.99 hrs (at 20 s past the hour HKT)
+2026-05-11 07:46:35 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-11 07:46:35 INFO Schedule window 1: Monday 07:00 - Monday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 3: Monday 13:00 - Tuesday 00:55 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 4: Tuesday 08:00 - Tuesday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 6: Tuesday 13:00 - Wednesday 00:55 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 7: Wednesday 08:00 - Wednesday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 9: Wednesday 13:00 - Thursday 00:55 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 10: Thursday 06:30 - Thursday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 12: Thursday 13:00 - Friday 02:55  (HKT)
+2026-05-11 07:46:35 INFO Schedule window 13: Friday 08:00 - Friday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-11 07:46:35 INFO Schedule window 15: Friday 13:00 - Saturday 04:55 (HKT)
+2026-05-11 07:46:35 INFO WhatsApp: +85266911989
+2026-05-11 07:46:45 INFO XAUUSD past hour HL | bar_start=2026-05-11 06:00:00+08:00 | high=4737.35 | low=4678.95
+2026-05-11 07:46:45 INFO XAGUSD past hour HL | bar_start=2026-05-11 06:00:00+08:00 | high=80.750 | low=79.060
+2026-05-11 07:46:46 INFO AUD.USD past hour HL | bar_start=2026-05-11 06:00:00+08:00 | high=0.72349 | low=0.72193
+2026-05-11 07:46:47 INFO EUR.USD past hour HL | bar_start=2026-05-11 06:00:00+08:00 | high=1.17661 | low=1.17579
+2026-05-11 07:46:47 INFO Brent past hour HL | bar_start=2026-05-11 06:00:00+08:00 | high=103.73 | low=102.96
+2026-05-11 07:46:55 INFO Fallback Enter key sent (attempt 1)
+2026-05-11 07:46:56 INFO Closed WhatsApp tab (Ctrl+W)
+2026-05-11 07:46:56 INFO Next run in 0.22 hrs (at 20 s past the hour HKT)
