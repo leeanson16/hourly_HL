@@ -29,7 +29,7 @@ schedule:
   - start_day: Monday
     start_time: "13:00"
     end_day: Tuesday
-    end_time: "00:55"
+    end_time: "00:50"
 
   - start_day: Tuesday
     start_time: "08:00"
