@@ -247,6 +247,72 @@ def fetch_spot_price(ib, contract, decimals):
         return None
 
 
+def _refocus_whatsapp_before_enter():
+    """Bring WhatsApp Web to the foreground (Windows) and click the compose area again before Enter sends."""
+    import sys
+    import pyautogui as pg
+    from pywhatkit.core import core
+
+    time.sleep(0.2)
+    if sys.platform == "win32":
+        try:
+            import ctypes
+            from ctypes import wintypes
+
+            user32 = ctypes.windll.user32
+            matches = []
+
+            @ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
+            def _enum(hwnd, _):
+                if not user32.IsWindowVisible(hwnd):
+                    return True
+                n = user32.GetWindowTextLengthW(hwnd) + 1
+                buf = ctypes.create_unicode_buffer(n)
+                user32.GetWindowTextW(hwnd, buf, n)
+                title = buf.value or ""
+                if "WhatsApp" in title:
+                    matches.append(hwnd)
+                return True
+
+            user32.EnumWindows(_enum, 0)
+            for hwnd in matches:
+                try:
+                    user32.ShowWindow(hwnd, 9)
+                    user32.SetForegroundWindow(hwnd)
+                    break
+                except Exception:
+                    continue
+        except Exception:
+            pass
+    time.sleep(0.35)
+    try:
+        pg.click(core.WIDTH / 2, core.HEIGHT / 2)
+    except Exception:
+        pass
+    time.sleep(0.25)
+
+
+def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, close_time=3):
+    """Same flow as pywhatkit.sendwhatmsg_instantly (5.3): URL prefills text, center click, wait, then refocus + Enter."""
+    import webbrowser as web
+    from urllib.parse import quote
+    import pyautogui as pg
+    from pywhatkit.core import core, exceptions, log
+
+    pg.FAILSAFE = False
+    if not core.check_number(number=phone_no):
+        raise exceptions.CountryCodeException("Country Code Missing in Phone Number!")
+    web.open(f"https://web.whatsapp.com/send?phone={phone_no}&text={quote(message)}")
+    time.sleep(4)
+    pg.click(core.WIDTH / 2, core.HEIGHT / 2)
+    time.sleep(wait_time - 4)
+    _refocus_whatsapp_before_enter()
+    pg.press("enter")
+    log.log_message(_time=time.localtime(), receiver=phone_no, message=message)
+    if tab_close:
+        core.close_tab(wait_time=close_time)
+
+
 def run_once(whatsapp_number=None, send_whatsapp=True, assets=None, brent_multiplier=1.0):
     if assets is None:
         assets = ASSETS_BASE
@@ -304,9 +370,12 @@ def run_once(whatsapp_number=None, send_whatsapp=True, assets=None, brent_multip
         ib.disconnect()
     if lines and whatsapp_number and send_whatsapp:
         try:
-            import pywhatkit as kit
+            import importlib
+
+            importlib.import_module("pywhatkit")
+
             msg = "\n".join(lines)
-            kit.sendwhatmsg_instantly(whatsapp_number, msg, wait_time=22, tab_close=True, close_time=15)
+            _send_whatsapp_instantly(whatsapp_number, msg, wait_time=22, tab_close=True, close_time=15)
         except Exception as e:
             log.warning("WhatsApp send failed: %s", e)
 
