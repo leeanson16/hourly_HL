@@ -352,6 +352,52 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
         core.close_tab(wait_time=close_time)
 
 
+def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_close=True, close_time=15):
+    """Send to WhatsApp group using either invite code or group JID (@g.us)."""
+    import sys
+    import webbrowser as web
+    from urllib.parse import quote
+    import pyautogui as pg
+    from pywhatkit.core import core, log
+
+    group_target = (group_target or "").strip()
+    if not group_target:
+        return
+
+    # pywhatkit native group path supports invite codes (e.g. chat.whatsapp.com/<code>).
+    if "@" not in group_target:
+        import pywhatkit as kit
+
+        kit.sendwhatmsg_to_group_instantly(
+            group_target,
+            message,
+            wait_time=wait_time,
+            tab_close=tab_close,
+            close_time=close_time,
+        )
+        return
+
+    # For group JID targets like 1203...@g.us, open direct send URL and press Enter.
+    pg.FAILSAFE = False
+    web.open(f"https://web.whatsapp.com/send?phone={quote(group_target)}&text={quote(message)}")
+    time.sleep(4)
+    if sys.platform == "win32":
+        _chrome_focus_foreground()
+    time.sleep(max(0, wait_time - 4))
+    if sys.platform == "win32":
+        _chrome_focus_foreground()
+    pg.press("enter")
+    try:
+        log.log_message(_time=time.localtime(), receiver=group_target, message=message)
+    except Exception as e:
+        log.warning("PyWhatKit log_message failed (message may still have sent): %s", e)
+    if tab_close:
+        time.sleep(0.35)
+        if sys.platform == "win32":
+            _chrome_focus_foreground()
+        core.close_tab(wait_time=close_time)
+
+
 def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="", send_whatsapp=True, assets=None, brent_multiplier=1.0):
     if assets is None:
         assets = ASSETS_BASE
@@ -409,16 +455,9 @@ def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="",
         ib.disconnect()
     if lines and send_whatsapp and (whatsapp_group_id or whatsapp_group_name or whatsapp_number):
         try:
-            import pywhatkit as kit
             msg = "\n".join(lines)
             if whatsapp_group_id:
-                kit.sendwhatmsg_to_group_instantly(
-                    whatsapp_group_id,
-                    msg,
-                    wait_time=22,
-                    tab_close=True,
-                    close_time=15,
-                )
+                _send_whatsapp_group_instantly(whatsapp_group_id, msg, wait_time=22, tab_close=True, close_time=15)
             elif whatsapp_group_name:
                 log.warning("whatsapp_group_name is set but pywhatkit requires whatsapp_group_id; skipping group send")
             else:
