@@ -251,6 +251,7 @@ def _win_find_chrome_hwnd():
     """Visible Google Chrome / Chromium main window (class Chrome_WidgetWin_1). Prefer a tab titled WhatsApp if several."""
     import ctypes
     from ctypes import wintypes
+    
 
     user32 = ctypes.windll.user32
     CHROME_CLASS = "Chrome_WidgetWin_1"
