@@ -10,7 +10,7 @@ use_brent: True
 # If unset, brent_contract_month (YYYYMM) is used instead. Expired months return HMDS "no data".
 # brent_con_id: 339981260
 brent_contract_month: "202607"
-brent_multiplier: 0.945
+brent_multiplier: 0.982
 
 # If true, skip sending WhatsApp on the first in-schedule run (then send on subsequent runs).
 dont_send_now: True
