@@ -9205,3 +9205,20 @@
 2026-05-11 08:00:27 INFO EUR.USD past hour HL | bar_start=2026-05-11 07:00:00+08:00 | high=1.17701 | low=1.17639
 2026-05-11 08:00:28 INFO Brent past hour HL | bar_start=2026-05-11 07:00:00+08:00 | high=91.85 | low=91.58
 2026-05-11 08:01:05 INFO Next run in 0.99 hrs (at 20 s past the hour HKT)
+2026-05-11 08:06:35 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202609', exchange='NYMEX', currency='USD')
+2026-05-11 08:06:35 INFO Schedule window 1: Monday 07:00 - Monday 09:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 2: Monday 13:00 - Monday 13:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 3: Monday 19:00 - Tuesday 00:55 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 4: Tuesday 08:00 - Tuesday 09:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 5: Tuesday 13:00 - Tuesday 13:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 6: Tuesday 19:00 - Wednesday 00:55 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 7: Wednesday 08:00 - Wednesday 09:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 8: Wednesday 13:00 - Wednesday 13:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 9: Wednesday 19:00 - Wednesday 23:55 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 10: Thursday 08:00 - Thursday 09:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 11: Thursday 13:00 - Thursday 13:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 12: Thursday 19:00 - Friday 00:55 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 13: Friday 08:00 - Friday 09:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 14: Friday 13:00 - Friday 13:00 (HKT)
+2026-05-11 08:06:35 INFO Schedule window 15: Friday 19:00 - Saturday 00:55 (HKT)
+2026-05-11 08:06:35 INFO WhatsApp: +85266911989
