@@ -247,53 +247,101 @@ def fetch_spot_price(ib, contract, decimals):
         return None
 
 
-def _refocus_whatsapp_before_enter():
-    """Bring WhatsApp Web to the foreground (Windows) and click the compose area again before Enter sends."""
+def _win_find_whatsapp_browser_hwnd():
+    """Visible top-level window: WhatsApp Web in Chrome / Edge / Chromium (Windows only)."""
+    import ctypes
+    from ctypes import wintypes
+
+    user32 = ctypes.windll.user32
+
+    def run_enum(require_browser_word):
+        matches = []
+
+        @ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
+        def enum_proc(hwnd, _):
+            if not user32.IsWindowVisible(hwnd):
+                return True
+            n = user32.GetWindowTextLengthW(hwnd)
+            if n <= 0:
+                return True
+            buf = ctypes.create_unicode_buffer(n + 1)
+            user32.GetWindowTextW(hwnd, buf, n + 1)
+            title = (buf.value or "").lower()
+            if "whatsapp" not in title:
+                return True
+            if require_browser_word:
+                if not (
+                    "chrome" in title
+                    or "edge" in title
+                    or "google" in title
+                    or "chromium" in title
+                    or "brave" in title
+                    or "vivaldi" in title
+                ):
+                    return True
+            matches.append(hwnd)
+            return True
+
+        cb = enum_proc
+        user32.EnumWindows(cb, 0)
+        return matches
+
+    matches = run_enum(True)
+    if not matches:
+        matches = run_enum(False)
+    return matches[0] if matches else None
+
+
+def _win_force_foreground(hwnd):
+    """SetForegroundWindow often fails unless we AttachThreadInput to the foreground thread first."""
+    import ctypes
+    from ctypes import wintypes
+
+    if not hwnd:
+        return False
+    user32 = ctypes.windll.user32
+    kernel32 = ctypes.windll.kernel32
+    SW_RESTORE = 9
+    try:
+        user32.ShowWindow(hwnd, SW_RESTORE)
+        fg = user32.GetForegroundWindow()
+        pid_dummy = wintypes.DWORD()
+        tid_fg = user32.GetWindowThreadProcessId(fg, ctypes.byref(pid_dummy)) if fg else 0
+        cur_tid = kernel32.GetCurrentThreadId()
+        if fg and tid_fg and tid_fg != cur_tid:
+            user32.AttachThreadInput(tid_fg, cur_tid, True)
+        user32.SetForegroundWindow(hwnd)
+        if fg and tid_fg and tid_fg != cur_tid:
+            user32.AttachThreadInput(tid_fg, cur_tid, False)
+        return True
+    except Exception:
+        return False
+
+
+def _whatsapp_focus_and_click_compose():
+    """Bring WhatsApp browser window to foreground and click chat center (pywhatkit-style)."""
     import sys
     import pyautogui as pg
     from pywhatkit.core import core
 
-    time.sleep(0.2)
+    pg.FAILSAFE = False
     if sys.platform == "win32":
-        try:
-            import ctypes
-            from ctypes import wintypes
-
-            user32 = ctypes.windll.user32
-            matches = []
-
-            @ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
-            def _enum(hwnd, _):
-                if not user32.IsWindowVisible(hwnd):
-                    return True
-                n = user32.GetWindowTextLengthW(hwnd) + 1
-                buf = ctypes.create_unicode_buffer(n)
-                user32.GetWindowTextW(hwnd, buf, n)
-                title = buf.value or ""
-                if "WhatsApp" in title:
-                    matches.append(hwnd)
-                return True
-
-            user32.EnumWindows(_enum, 0)
-            for hwnd in matches:
-                try:
-                    user32.ShowWindow(hwnd, 9)
-                    user32.SetForegroundWindow(hwnd)
-                    break
-                except Exception:
-                    continue
-        except Exception:
-            pass
-    time.sleep(0.35)
+        hwnd = _win_find_whatsapp_browser_hwnd()
+        if hwnd:
+            _win_force_foreground(hwnd)
+        else:
+            log.warning("WhatsApp Web browser window not found for focus")
+    time.sleep(0.45)
     try:
         pg.click(core.WIDTH / 2, core.HEIGHT / 2)
     except Exception:
         pass
-    time.sleep(0.25)
+    time.sleep(0.3)
 
 
 def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, close_time=3):
-    """Same flow as pywhatkit.sendwhatmsg_instantly (5.3): URL prefills text, center click, wait, then refocus + Enter."""
+    """Open WhatsApp Web with prefilled text (pywhatkit 5.3 style), focus browser, Enter to send, optional close tab."""
+    import sys
     import webbrowser as web
     from urllib.parse import quote
     import pyautogui as pg
@@ -304,12 +352,17 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
         raise exceptions.CountryCodeException("Country Code Missing in Phone Number!")
     web.open(f"https://web.whatsapp.com/send?phone={phone_no}&text={quote(message)}")
     time.sleep(4)
-    pg.click(core.WIDTH / 2, core.HEIGHT / 2)
-    time.sleep(wait_time - 4)
-    _refocus_whatsapp_before_enter()
+    _whatsapp_focus_and_click_compose()
+    time.sleep(max(0, wait_time - 4))
+    _whatsapp_focus_and_click_compose()
     pg.press("enter")
-    log.log_message(_time=time.localtime(), receiver=phone_no, message=message)
+    try:
+        log.log_message(_time=time.localtime(), receiver=phone_no, message=message)
+    except Exception as e:
+        log.warning("PyWhatKit log_message failed (message may still have sent): %s", e)
     if tab_close:
+        time.sleep(0.35)
+        _whatsapp_focus_and_click_compose()
         core.close_tab(wait_time=close_time)
 
 
