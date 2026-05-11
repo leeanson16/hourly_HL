@@ -21,7 +21,8 @@ schedule:
   - start_day: Monday
     start_time: "07:00"
     end_day: Monday
-    end_time: "09:00"
+    end_t
+    ime: "09:00"
   - start_day: Monday
     start_time: "13:00"
     end_day: Monday
