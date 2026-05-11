@@ -247,49 +247,39 @@ def fetch_spot_price(ib, contract, decimals):
         return None
 
 
-def _win_find_whatsapp_browser_hwnd():
-    """Visible top-level window: WhatsApp Web in Chrome / Edge / Chromium (Windows only)."""
+def _win_find_chrome_hwnd():
+    """Visible Google Chrome / Chromium main window (class Chrome_WidgetWin_1). Prefer a tab titled WhatsApp if several."""
     import ctypes
     from ctypes import wintypes
 
     user32 = ctypes.windll.user32
+    CHROME_CLASS = "Chrome_WidgetWin_1"
+    candidates = []
 
-    def run_enum(require_browser_word):
-        matches = []
-
-        @ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
-        def enum_proc(hwnd, _):
-            if not user32.IsWindowVisible(hwnd):
-                return True
-            n = user32.GetWindowTextLengthW(hwnd)
-            if n <= 0:
-                return True
-            buf = ctypes.create_unicode_buffer(n + 1)
-            user32.GetWindowTextW(hwnd, buf, n + 1)
-            title = (buf.value or "").lower()
-            if "whatsapp" not in title:
-                return True
-            if require_browser_word:
-                if not (
-                    "chrome" in title
-                    or "edge" in title
-                    or "google" in title
-                    or "chromium" in title
-                    or "brave" in title
-                    or "vivaldi" in title
-                ):
-                    return True
-            matches.append(hwnd)
+    @ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
+    def enum_proc(hwnd, _):
+        if not user32.IsWindowVisible(hwnd):
             return True
+        cls = ctypes.create_unicode_buffer(256)
+        user32.GetClassNameW(hwnd, cls, 256)
+        if cls.value != CHROME_CLASS:
+            return True
+        n = user32.GetWindowTextLengthW(hwnd)
+        title = ""
+        if n > 0:
+            tbuf = ctypes.create_unicode_buffer(n + 1)
+            user32.GetWindowTextW(hwnd, tbuf, n + 1)
+            title = tbuf.value or ""
+        candidates.append((hwnd, title))
+        return True
 
-        cb = enum_proc
-        user32.EnumWindows(cb, 0)
-        return matches
-
-    matches = run_enum(True)
-    if not matches:
-        matches = run_enum(False)
-    return matches[0] if matches else None
+    user32.EnumWindows(enum_proc, 0)
+    if not candidates:
+        return None
+    for hwnd, title in candidates:
+        if "whatsapp" in title.lower():
+            return hwnd
+    return candidates[0][0]
 
 
 def _win_force_foreground(hwnd):
@@ -318,29 +308,22 @@ def _win_force_foreground(hwnd):
         return False
 
 
-def _whatsapp_focus_and_click_compose():
-    """Bring WhatsApp browser window to foreground and click chat center (pywhatkit-style)."""
+def _chrome_focus_foreground():
+    """Bring Chrome to the foreground (Windows); no clicks — keys go to the active Chrome window."""
     import sys
-    import pyautogui as pg
-    from pywhatkit.core import core
 
-    pg.FAILSAFE = False
-    if sys.platform == "win32":
-        hwnd = _win_find_whatsapp_browser_hwnd()
-        if hwnd:
-            _win_force_foreground(hwnd)
-        else:
-            log.warning("WhatsApp Web browser window not found for focus")
-    time.sleep(0.45)
-    try:
-        pg.click(core.WIDTH / 2, core.HEIGHT / 2)
-    except Exception:
-        pass
-    time.sleep(0.3)
+    if sys.platform != "win32":
+        return
+    hwnd = _win_find_chrome_hwnd()
+    if hwnd:
+        _win_force_foreground(hwnd)
+    else:
+        log.warning("Chrome window not found for focus")
+    time.sleep(0.25)
 
 
 def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, close_time=3):
-    """Open WhatsApp Web with prefilled text (pywhatkit 5.3 style), focus browser, Enter to send, optional close tab."""
+    """Open WhatsApp Web with prefilled text (pywhatkit 5.3 style); keep Chrome focused until Enter and tab close."""
     import sys
     import webbrowser as web
     from urllib.parse import quote
@@ -352,9 +335,11 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
         raise exceptions.CountryCodeException("Country Code Missing in Phone Number!")
     web.open(f"https://web.whatsapp.com/send?phone={phone_no}&text={quote(message)}")
     time.sleep(4)
-    _whatsapp_focus_and_click_compose()
+    if sys.platform == "win32":
+        _chrome_focus_foreground()
     time.sleep(max(0, wait_time - 4))
-    _whatsapp_focus_and_click_compose()
+    if sys.platform == "win32":
+        _chrome_focus_foreground()
     pg.press("enter")
     try:
         log.log_message(_time=time.localtime(), receiver=phone_no, message=message)
@@ -362,7 +347,8 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
         log.warning("PyWhatKit log_message failed (message may still have sent): %s", e)
     if tab_close:
         time.sleep(0.35)
-        _whatsapp_focus_and_click_compose()
+        if sys.platform == "win32":
+            _chrome_focus_foreground()
         core.close_tab(wait_time=close_time)
 
 
@@ -450,7 +436,7 @@ def next_run_in_seconds(schedule):
 def main():
     config = _load_config()
     schedule = _normalize_schedule(config.get("schedule"))
-    whatsapp_number = (config.get("whatsapp_number")).strip()
+    whatsapp_number = (config.get("whatsapp_number") or "").strip()
     assets = _get_assets(config)
     if config.get("use_xau_xag_cfd"):
         log.info("Using CFD source for XAUUSD and XAGUSD")
