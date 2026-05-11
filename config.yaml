@@ -1,3 +1,5 @@
+# If have group no number
+whatsapp_group_name: "AlgoTrader GROUP"
 # WhatsApp: number to receive hourly HL messages (pywhatkit uses WhatsApp Web).
 whatsapp_number: "+85266911989" # 85268189621 85266911989
 
