@@ -1,9 +1,8 @@
-# If have group no number
-whatsapp_group_name: "" # "AlgoTrader GROUP"
 # PyWhatKit group send requires a WhatsApp group id (example: "AbCdEfGhIjKlMnOpQrStUv@group")
 whatsapp_group_id: "120363382973394022@g.us"
-# WhatsApp: number to receive hourly HL messages (pywhatkit uses WhatsApp Web).
-whatsapp_number: "+85266911989" # +85268189621 +85266911989
+
+# Only if no group id, WhatsApp: number to receive hourly HL messages (pywhatkit uses WhatsApp Web).
+whatsapp_number: "" # +85268189621 +85266911989
 
 # Use CFD source for XAUUSD and XAGUSD instead of CMDTY (temporary switch).
 use_xau_xag_cfd: False
