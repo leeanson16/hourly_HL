@@ -1,7 +1,7 @@
 # If have group no number
-whatsapp_group_name: "AlgoTrader GROUP"
+whatsapp_group_name: "AlgoTrader GROUP" # ""
 # WhatsApp: number to receive hourly HL messages (pywhatkit uses WhatsApp Web).
-whatsapp_number: "+85266911989" # 85268189621 85266911989
+whatsapp_number: "" # 85268189621 85266911989
 
 # Use CFD source for XAUUSD and XAGUSD instead of CMDTY (temporary switch).
 use_xau_xag_cfd: False
@@ -15,7 +15,7 @@ brent_contract_month: "202607"
 brent_multiplier: 0.982
 
 # If true, skip sending WhatsApp on the first in-schedule run (then send on subsequent runs).
-dont_send_now: False
+dont_send_now: True
 
 # Run only during these weekly windows (HKT). All times are Hong Kong time.
 # List multiple start/end windows; run when current time falls in any of them.
