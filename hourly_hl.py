@@ -352,50 +352,7 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
         core.close_tab(wait_time=close_time)
 
 
-def _send_whatsapp_group_by_name(group_name, message, wait_time=18, tab_close=False, close_time=3):
-    """Open WhatsApp Web and send to a group by visible chat name."""
-    import sys
-    import webbrowser as web
-    import pyautogui as pg
-    from pywhatkit.core import core, log
-
-    pg.FAILSAFE = False
-    web.open("https://web.whatsapp.com")
-    time.sleep(4)
-    if sys.platform == "win32":
-        _chrome_focus_foreground()
-    time.sleep(max(0, wait_time - 4))
-    if sys.platform == "win32":
-        _chrome_focus_foreground()
-
-    # WhatsApp Web quick search shortcut (Ctrl+K) to locate target group chat.
-    pg.hotkey("ctrl", "k")
-    time.sleep(0.35)
-    pg.write(group_name)
-    time.sleep(1.0)
-    pg.press("enter")
-    time.sleep(0.8)
-
-    # Type multiline message into compose and send.
-    for ch in message:
-        if ch == "\n":
-            pg.hotkey("shift", "enter")
-        else:
-            pg.write(ch)
-    pg.press("enter")
-
-    try:
-        log.log_message(_time=time.localtime(), receiver=group_name, message=message)
-    except Exception as e:
-        log.warning("PyWhatKit log_message failed (message may still have sent): %s", e)
-    if tab_close:
-        time.sleep(0.35)
-        if sys.platform == "win32":
-            _chrome_focus_foreground()
-        core.close_tab(wait_time=close_time)
-
-
-def run_once(whatsapp_number=None, whatsapp_group_name="", send_whatsapp=True, assets=None, brent_multiplier=1.0):
+def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="", send_whatsapp=True, assets=None, brent_multiplier=1.0):
     if assets is None:
         assets = ASSETS_BASE
     ib = IB()
@@ -450,15 +407,20 @@ def run_once(whatsapp_number=None, whatsapp_group_name="", send_whatsapp=True, a
             lines.append(line)
     finally:
         ib.disconnect()
-    if lines and send_whatsapp and (whatsapp_group_name or whatsapp_number):
+    if lines and send_whatsapp and (whatsapp_group_id or whatsapp_group_name or whatsapp_number):
         try:
-            import importlib
-
-            importlib.import_module("pywhatkit")
-
+            import pywhatkit as kit
             msg = "\n".join(lines)
-            if whatsapp_group_name:
-                _send_whatsapp_group_by_name(whatsapp_group_name, msg, wait_time=22, tab_close=True, close_time=15)
+            if whatsapp_group_id:
+                kit.sendwhatmsg_to_group_instantly(
+                    whatsapp_group_id,
+                    msg,
+                    wait_time=22,
+                    tab_close=True,
+                    close_time=15,
+                )
+            elif whatsapp_group_name:
+                log.warning("whatsapp_group_name is set but pywhatkit requires whatsapp_group_id; skipping group send")
             else:
                 _send_whatsapp_instantly(whatsapp_number, msg, wait_time=22, tab_close=True, close_time=15)
         except Exception as e:
@@ -483,6 +445,7 @@ def main():
     config = _load_config()
     schedule = _normalize_schedule(config.get("schedule"))
     whatsapp_number = (config.get("whatsapp_number") or "").strip()
+    whatsapp_group_id = (config.get("whatsapp_group_id") or "").strip()
     whatsapp_group_name = (config.get("whatsapp_group_name") or "").strip()
     assets = _get_assets(config)
     if config.get("use_xau_xag_cfd"):
@@ -495,8 +458,10 @@ def main():
             log.info("Schedule window %s: %s %s - %s %s (HKT)", i + 1, w.get("start_day"), w.get("start_time"), w.get("end_day"), w.get("end_time"))
     else:
         log.info("No config.yaml schedule; running 24/7")
-    if whatsapp_group_name:
-        log.info("WhatsApp group: %s", whatsapp_group_name)
+    if whatsapp_group_id:
+        log.info("WhatsApp group id: %s", whatsapp_group_id)
+    elif whatsapp_group_name:
+        log.info("WhatsApp group name: %s (note: pywhatkit group send uses group id)", whatsapp_group_name)
     else:
         log.info("WhatsApp: %s", whatsapp_number)
     dont_send_now = bool(config.get("dont_send_now", True))
@@ -507,6 +472,7 @@ def main():
             try:
                 run_once(
                     whatsapp_number,
+                    whatsapp_group_id=whatsapp_group_id,
                     whatsapp_group_name=whatsapp_group_name,
                     send_whatsapp=not dont_send_now,
                     assets=assets,

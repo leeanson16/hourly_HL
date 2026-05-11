@@ -1,5 +1,7 @@
 # If have group no number
 whatsapp_group_name: "AlgoTrader GROUP" # ""
+# PyWhatKit group send requires a WhatsApp group id (example: "AbCdEfGhIjKlMnOpQrStUv@group")
+whatsapp_group_id: ""
 # WhatsApp: number to receive hourly HL messages (pywhatkit uses WhatsApp Web).
 whatsapp_number: "" # 85268189621 85266911989
 
