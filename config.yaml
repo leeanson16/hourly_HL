@@ -9,11 +9,11 @@ use_brent: True
 # Brent NYMEX future: set brent_con_id from TWS Contract Details when the front month changes.
 # If unset, brent_contract_month (YYYYMM) is used instead. Expired months return HMDS "no data".
 # brent_con_id: 339981260
-brent_contract_month: "202609"
+brent_contract_month: "202607"
 brent_multiplier: 0.945
 
 # If true, skip sending WhatsApp on the first in-schedule run (then send on subsequent runs).
-dont_send_now: False
+dont_send_now: True
 
 # Run only during these weekly windows (HKT). All times are Hong Kong time.
 # List multiple start/end windows; run when current time falls in any of them.
@@ -21,64 +21,64 @@ schedule:
   - start_day: Monday
     start_time: "07:00"
     end_day: Monday
-    end_time: "09:00"
+    end_time: "13:00"
   - start_day: Monday
     start_time: "13:00"
     end_day: Monday
     end_time: "13:00"
   - start_day: Monday
-    start_time: "19:00"
+    start_time: "13:00"
     end_day: Tuesday
     end_time: "00:55"
 
   - start_day: Tuesday
     start_time: "08:00"
     end_day: Tuesday
-    end_time: "09:00"
+    end_time: "13:00"
   - start_day: Tuesday
     start_time: "13:00"
     end_day: Tuesday
     end_time: "13:00"
   - start_day: Tuesday
-    start_time: "19:00"
+    start_time: "13:00"
     end_day: Wednesday
     end_time: "00:55"
 
   - start_day: Wednesday
     start_time: "08:00"
     end_day: Wednesday
-    end_time: "09:00"
+    end_time: "13:00"
   - start_day: Wednesday
     start_time: "13:00"
     end_day: Wednesday
     end_time: "13:00"
   - start_day: Wednesday
-    start_time: "19:00"
+    start_time: "13:00"
     end_day: Wednesday
-    end_time: "23:55"
+    end_time: "00:55"
 
   - start_day: Thursday
     start_time: "08:00"
     end_day: Thursday
-    end_time: "09:00"
+    end_time: "13:00"
   - start_day: Thursday
     start_time: "13:00"
     end_day: Thursday
     end_time: "13:00"
   - start_day: Thursday
-    start_time: "19:00"
+    start_time: "13:00"
     end_day: Friday
     end_time: "00:55"
 
   - start_day: Friday
     start_time: "08:00"
     end_day: Friday
-    end_time: "09:00"
+    end_time: "13:00"
   - start_day: Friday
     start_time: "13:00"
     end_day: Friday
     end_time: "13:00"
   - start_day: Friday
-    start_time: "19:00"
+    start_time: "13:00"
     end_day: Saturday
     end_time: "00:55"
