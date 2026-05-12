@@ -1,4 +1,4 @@
-# PyWhatKit group send requires a WhatsApp group id (example: "AbCdEfGhIjKlMnOpQrStUv@group")
+# _PyWhatKit group send requires a WhatsApp group id (example: "AbCdEfGhIjKlMnOpQrStUv@group")
 whatsapp_group_id: "KXhelx33xPz9xEJX61r5Qp"
 
 # Only if no group id, WhatsApp: number to receive hourly HL messages (pywhatkit uses WhatsApp Web).
