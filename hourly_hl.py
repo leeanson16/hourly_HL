@@ -449,17 +449,18 @@ def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="",
 
 
 def next_run_in_seconds(schedule):
-    """Seconds until next run: 20 s past the hour (HKT), only when in schedule."""
+    """Seconds until next run: 20 s past the hour (HKT). With a schedule, only times inside a window count."""
     now = datetime.now(HKT)
-    next_run = now.replace(minute=0, second=20, microsecond=0)
-    next_run += timedelta(hours=1)
-    # If we have a schedule, advance to next run time that falls inside the window
+    # Next tick at HH:00:20 — this hour if still ahead, else next hour (do not skip HH:00:20 in the current hour).
+    candidate = now.replace(minute=0, second=20, microsecond=0)
+    if now >= candidate:
+        candidate += timedelta(hours=1)
     if schedule:
         for _ in range(7 * 24 + 1):
-            if _in_schedule(next_run, schedule):
+            if _in_schedule(candidate, schedule):
                 break
-            next_run += timedelta(hours=1)
-    return max(60, (next_run - now).total_seconds())
+            candidate += timedelta(hours=1)
+    return max(1.0, (candidate - now).total_seconds())
 
 
 def main():
