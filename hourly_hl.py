@@ -251,7 +251,7 @@ def _win_find_chrome_hwnd():
     """Visible Google Chrome / Chromium main window (class Chrome_WidgetWin_1). Prefer a tab titled WhatsApp if several."""
     import ctypes
     from ctypes import wintypes
-    
+
 
     user32 = ctypes.windll.user32
     CHROME_CLASS = "Chrome_WidgetWin_1"
@@ -323,7 +323,7 @@ def _chrome_focus_foreground():
     time.sleep(0.25)
 
 
-def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, close_time=3):
+def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, close_time=3, schedule=None):
     """Open WhatsApp Web with prefilled text (pywhatkit 5.3 style); keep Chrome focused until Enter and tab close."""
     import sys
     import webbrowser as web
@@ -332,6 +332,9 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
     from pywhatkit.core import core, exceptions, log
 
     pg.FAILSAFE = False
+    if schedule and not _in_schedule(datetime.now(HKT), schedule):
+        log.info("Skipping WhatsApp send: outside config schedule window before opening WhatsApp Web")
+        return
     if not core.check_number(number=phone_no):
         raise exceptions.CountryCodeException("Country Code Missing in Phone Number!")
     web.open(f"https://web.whatsapp.com/send?phone={phone_no}&text={quote(message)}")
@@ -353,11 +356,15 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
         core.close_tab(wait_time=close_time)
 
 
-def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_close=True, close_time=15):
+def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_close=True, close_time=15, schedule=None):
     """Send to WhatsApp group via invite code (chat.whatsapp.com/<code>)."""
 
     group_target = (group_target or "").strip()
     if not group_target:
+        return
+
+    if schedule and not _in_schedule(datetime.now(HKT), schedule):
+        log.info("Skipping WhatsApp group send: outside config schedule window before pywhatkit")
         return
 
     # pywhatkit supports group invite code, not group JID (@g.us).
@@ -380,7 +387,7 @@ def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_clos
     )
 
 
-def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="", send_whatsapp=True, assets=None, brent_multiplier=1.0):
+def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="", send_whatsapp=True, assets=None, brent_multiplier=1.0, schedule=None):
     if assets is None:
         assets = ASSETS_BASE
     ib = IB()
@@ -436,16 +443,19 @@ def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="",
     finally:
         ib.disconnect()
     if lines and send_whatsapp and (whatsapp_group_id or whatsapp_group_name or whatsapp_number):
-        try:
-            msg = "\n".join(lines)
-            if whatsapp_group_id:
-                _send_whatsapp_group_instantly(whatsapp_group_id, msg, wait_time=22, tab_close=True, close_time=15)
-            elif whatsapp_group_name:
-                log.warning("whatsapp_group_name is set but pywhatkit requires whatsapp_group_id; skipping group send")
-            else:
-                _send_whatsapp_instantly(whatsapp_number, msg, wait_time=22, tab_close=True, close_time=15)
-        except Exception as e:
-            log.warning("WhatsApp send failed: %s", e)
+        if schedule and not _in_schedule(datetime.now(HKT), schedule):
+            log.info("Skipping WhatsApp send: outside config schedule window after IB fetch")
+        else:
+            try:
+                msg = "\n".join(lines)
+                if whatsapp_group_id:
+                    _send_whatsapp_group_instantly(whatsapp_group_id, msg, wait_time=22, tab_close=True, close_time=15, schedule=schedule)
+                elif whatsapp_group_name:
+                    log.warning("whatsapp_group_name is set but pywhatkit requires whatsapp_group_id; skipping group send")
+                else:
+                    _send_whatsapp_instantly(whatsapp_number, msg, wait_time=22, tab_close=True, close_time=15, schedule=schedule)
+            except Exception as e:
+                log.warning("WhatsApp send failed: %s", e)
 
 
 def next_run_in_seconds(schedule):
@@ -499,6 +509,7 @@ def main():
                     send_whatsapp=not dont_send_now,
                     assets=assets,
                     brent_multiplier=brent_multiplier,
+                    schedule=schedule,
                 )
             except (TimeoutError, ConnectionError, OSError) as e:
                 log.warning("IB connect/run failed, will retry next run: %s", e)
