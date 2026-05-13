@@ -395,13 +395,35 @@ def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="",
     lines = []
     now_hkt = datetime.now(HKT)
     expected_bar_start = (now_hkt - timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+
+    def _schedule_allows():
+        return (not schedule) or _in_schedule(datetime.now(HKT), schedule)
+
+    if schedule and not _schedule_allows():
+        log.info("Skipping run: outside config schedule window (before IB connect)")
+        return
+
     max_retries = 3
     retry_delay = 30  # seconds between connect retries
     for attempt in range(1, max_retries + 1):
+        if schedule and not _schedule_allows():
+            log.info("Skipping run: outside config schedule window during IB connect retries")
+            try:
+                ib.disconnect()
+            except Exception:
+                pass
+            return
         try:
             ib.connect(IB_HOST, IB_PORT, clientId=CLIENT_ID + attempt - 1)
             break
         except Exception as e:
+            if schedule and not _schedule_allows():
+                log.info("Skipping run: outside config schedule window during IB connect retries")
+                try:
+                    ib.disconnect()
+                except Exception:
+                    pass
+                return
             log.warning("IB connect attempt %d/%d failed: %s", attempt, max_retries, e)
             try:
                 ib.disconnect()
@@ -412,23 +434,51 @@ def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="",
                 time.sleep(retry_delay)
             else:
                 raise
+    if schedule and not _schedule_allows():
+        log.info("Skipping run: outside config schedule window after IB connect")
+        try:
+            ib.disconnect()
+        except Exception:
+            pass
+        return
     try:
         for name, short, decimals, contract_what_list in assets:
+            if schedule and not _schedule_allows():
+                log.info("Stopping run: left config schedule window during IB fetch")
+                break
             high, low, bar_start = fetch_last_completed_hour_hl(ib, contract_what_list)
+            if schedule and not _schedule_allows():
+                log.info("Stopping run: left config schedule window during IB fetch")
+                break
             if high is None or low is None:
+                if schedule and not _schedule_allows():
+                    log.info("Stopping run: left config schedule window during IB fetch")
+                    break
                 log.warning("%s past hour HL | no bar data", name)
                 continue
             bar_start_hour = bar_start.replace(minute=0, second=0, microsecond=0) if hasattr(bar_start, "replace") else bar_start
             if bar_start_hour != expected_bar_start:
+                if schedule and not _schedule_allows():
+                    log.info("Stopping run: left config schedule window during IB fetch")
+                    break
                 log.warning("%s bar_start=%s not last hour (expected %s), skipping", name, bar_start, expected_bar_start)
                 continue
             if short == "Brent":
                 high, low = round(high * brent_multiplier, 2), round(low * brent_multiplier, 2)
             spot = None
             if short == "XAU":
+                if schedule and not _schedule_allows():
+                    log.info("Stopping run: left config schedule window before XAU spot")
+                    break
                 spot_contract = contract_what_list[0][0]
                 spot = fetch_spot_price(ib, spot_contract, decimals)
+                if schedule and not _schedule_allows():
+                    log.info("Stopping run: left config schedule window after XAU spot")
+                    break
                 if spot is None:
+                    if schedule and not _schedule_allows():
+                        log.info("Stopping run: left config schedule window during IB fetch")
+                        break
                     log.warning("XAU spot unavailable; omitting spot in message")
             fmt = f"%.{decimals}f"
             if short == "XAU":
@@ -438,12 +488,15 @@ def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="",
                     line = f"{short.lower()} {fmt % spot} spot {fmt % high} high {fmt % low} low"
             else:
                 line = f"{short.lower()} {fmt % high} high {fmt % low} low"
+            if schedule and not _schedule_allows():
+                log.info("Stopping run: left config schedule window before logging %s", name)
+                break
             log.info("%s past hour HL | bar_start=%s | high=%s | low=%s", name, bar_start, fmt % high, fmt % low)
             lines.append(line)
     finally:
         ib.disconnect()
     if lines and send_whatsapp and (whatsapp_group_id or whatsapp_group_name or whatsapp_number):
-        if schedule and not _in_schedule(datetime.now(HKT), schedule):
+        if schedule and not _schedule_allows():
             log.info("Skipping WhatsApp send: outside config schedule window after IB fetch")
         else:
             try:
