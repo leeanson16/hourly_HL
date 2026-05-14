@@ -249,7 +249,13 @@ def fetch_spot_price(ib, contract, decimals):
 
 
 def _find_google_chrome_exe_windows():
-    """Return path to google chrome.exe, or None."""
+    """Return path to google chrome.exe, or None. Config key chrome_exe wins if set and exists."""
+    cfg = _load_config()
+    custom = (cfg.get("chrome_exe") or "").strip()
+    if custom:
+        cp = Path(custom)
+        if cp.is_file():
+            return str(cp)
     for p in (
         Path(os.environ.get("LOCALAPPDATA", "")) / "Google" / "Chrome" / "Application" / "chrome.exe",
         Path(os.environ.get("PROGRAMFILES", r"C:\Program Files")) / "Google" / "Chrome" / "Application" / "chrome.exe",
