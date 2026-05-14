@@ -4053,3 +4053,13 @@ Time: 11:0
 Group ID: KXhelx33xPz9xEJX61r5Qp
 Message: xau 4686.38 spot 4699.80 high 4680.22 lowxag 87.810 high 86.850 lowaud 0.72529 high 0.72439 loweur 1.17153 high 1.17117 lowbrent 103.99 high 103.58 low
 --------------------
+Date: 14/5/2026
+Time: 12:0
+Group ID: KXhelx33xPz9xEJX61r5Qp
+Message: xau 4673.74 spot 4693.44 high 4674.18 lowxag 87.380 high 86.380 lowaud 0.72542 high 0.72479 loweur 1.17152 high 1.17098 lowbrent 104.29 high 103.84 low
+--------------------
+Date: 14/5/2026
+Time: 13:0
+Group ID: KXhelx33xPz9xEJX61r5Qp
+Message: xau 4702.70 spot 4712.87 high 4668.94 lowxag 87.360 high 86.280 lowaud 0.72598 high 0.72509 loweur 1.17174 high 1.17117 lowbrent 104.17 high 103.99 low
+--------------------
