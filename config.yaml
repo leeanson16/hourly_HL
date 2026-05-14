@@ -60,7 +60,7 @@ schedule:
     end_time: "13:00"
   - start_day: Wednesday
     start_time: "13:00"
-    end_day: Wednesday
+    end_day: Thursday
     end_time: "00:55"
 
   - start_day: Thursday
