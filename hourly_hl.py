@@ -3,6 +3,7 @@ Log past hour (hourly start: 8am, 9am, ...) High and Low for multiple assets fro
 Runs every hour at 20 seconds past the hour; logs the completed hour's HL per asset.
 Schedule window (days + times, HKT) is read from config.yaml.
 """
+import os
 import time
 import logging
 import math
@@ -247,11 +248,59 @@ def fetch_spot_price(ib, contract, decimals):
         return None
 
 
-def _win_find_chrome_hwnd():
-    """Visible Google Chrome / Chromium main window (class Chrome_WidgetWin_1). Prefer a tab titled WhatsApp if several."""
+def _find_google_chrome_exe_windows():
+    """Return path to google chrome.exe, or None."""
+    for p in (
+        Path(os.environ.get("LOCALAPPDATA", "")) / "Google" / "Chrome" / "Application" / "chrome.exe",
+        Path(os.environ.get("PROGRAMFILES", r"C:\Program Files")) / "Google" / "Chrome" / "Application" / "chrome.exe",
+        Path(os.environ.get("PROGRAMFILES(X86)", r"C:\Program Files (x86)")) / "Google" / "Chrome" / "Application" / "chrome.exe",
+    ):
+        if p.is_file():
+            return str(p)
+    return None
+
+
+def _open_url_in_google_chrome_windows(url):
+    """Open URL in Google Chrome only (not the system default browser). Returns True on success."""
+    import ctypes
+
+    chrome = _find_google_chrome_exe_windows()
+    if not chrome:
+        log.warning("Google Chrome not found under standard install paths; cannot open WhatsApp in Chrome")
+        return False
+    rc = ctypes.windll.shell32.ShellExecuteW(None, "open", chrome, url, None, 1)
+    if rc <= 32:
+        log.warning("ShellExecuteW Chrome failed (code %s)", rc)
+        return False
+    return True
+
+
+def _win_exe_path_from_hwnd(hwnd):
     import ctypes
     from ctypes import wintypes
 
+    PROCESS_QUERY_LIMITED_INFORMATION = 0x1000
+    user32 = ctypes.windll.user32
+    kernel32 = ctypes.windll.kernel32
+    pid = wintypes.DWORD()
+    if not user32.GetWindowThreadProcessId(hwnd, ctypes.byref(pid)):
+        return None
+    h = kernel32.OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, pid.value)
+    if not h:
+        return None
+    buf = ctypes.create_unicode_buffer(4096)
+    size = wintypes.DWORD(4096)
+    ok = kernel32.QueryFullProcessImageNameW(h, 0, buf, ctypes.byref(size))
+    kernel32.CloseHandle(h)
+    if not ok:
+        return None
+    return buf.value or None
+
+
+def _win_find_google_chrome_hwnd():
+    """Visible Google Chrome main window only (excludes Edge/Brave: same Chrome_WidgetWin_1 class). Prefer WhatsApp tab."""
+    import ctypes
+    from ctypes import wintypes
 
     user32 = ctypes.windll.user32
     CHROME_CLASS = "Chrome_WidgetWin_1"
@@ -264,6 +313,9 @@ def _win_find_chrome_hwnd():
         cls = ctypes.create_unicode_buffer(256)
         user32.GetClassNameW(hwnd, cls, 256)
         if cls.value != CHROME_CLASS:
+            return True
+        exe = (_win_exe_path_from_hwnd(hwnd) or "").lower()
+        if "google\\chrome\\application\\chrome.exe" not in exe.replace("/", "\\"):
             return True
         n = user32.GetWindowTextLengthW(hwnd)
         title = ""
@@ -310,21 +362,21 @@ def _win_force_foreground(hwnd):
 
 
 def _chrome_focus_foreground():
-    """Bring Chrome to the foreground (Windows); no clicks — keys go to the active Chrome window."""
+    """Bring Google Chrome to the foreground (Windows); keys go to Chrome, not Edge."""
     import sys
 
     if sys.platform != "win32":
         return
-    hwnd = _win_find_chrome_hwnd()
+    hwnd = _win_find_google_chrome_hwnd()
     if hwnd:
         _win_force_foreground(hwnd)
     else:
-        log.warning("Chrome window not found for focus")
+        log.warning("Google Chrome window not found for focus (Edge ignored)")
     time.sleep(0.25)
 
 
 def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, close_time=3, schedule=None):
-    """Open WhatsApp Web with prefilled text (pywhatkit 5.3 style); keep Chrome focused until Enter and tab close."""
+    """Open WhatsApp Web in Google Chrome with prefilled text; focus Chrome, then Enter and optional tab close."""
     import sys
     import webbrowser as web
     from urllib.parse import quote
@@ -337,13 +389,23 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
         return
     if not core.check_number(number=phone_no):
         raise exceptions.CountryCodeException("Country Code Missing in Phone Number!")
-    web.open(f"https://web.whatsapp.com/send?phone={phone_no}&text={quote(message)}")
+    url = f"https://web.whatsapp.com/send?phone={phone_no}&text={quote(message)}"
+    if sys.platform == "win32":
+        if not _open_url_in_google_chrome_windows(url):
+            return
+    else:
+        web.open(url)
     time.sleep(4)
     if sys.platform == "win32":
         _chrome_focus_foreground()
     time.sleep(max(0, wait_time - 4))
     if sys.platform == "win32":
         _chrome_focus_foreground()
+    try:
+        pg.click(core.WIDTH / 2, core.HEIGHT / 2)
+    except Exception:
+        pass
+    time.sleep(0.15)
     pg.press("enter")
     try:
         log.log_message(_time=time.localtime(), receiver=phone_no, message=message)
@@ -364,7 +426,7 @@ def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_clos
         return
 
     if schedule and not _in_schedule(datetime.now(HKT), schedule):
-        log.info("Skipping WhatsApp group send: outside config schedule window before pywhatkit")
+        log.info("Skipping WhatsApp group send: outside config schedule window before opening WhatsApp Web")
         return
 
     # pywhatkit supports group invite code, not group JID (@g.us).
@@ -376,15 +438,45 @@ def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_clos
         )
         return
 
-    import pywhatkit as kit
+    import sys
+    import pyautogui as pg
+    from pywhatkit.core import core, log
 
-    kit.sendwhatmsg_to_group_instantly(
-        group_target,
-        message,
-        wait_time=wait_time,
-        tab_close=tab_close,
-        close_time=close_time,
-    )
+    pg.FAILSAFE = False
+    url = "https://web.whatsapp.com/accept?code=" + group_target
+    if sys.platform == "win32":
+        if not _open_url_in_google_chrome_windows(url):
+            return
+    else:
+        import webbrowser as web
+
+        web.open(url)
+    time.sleep(4)
+    if sys.platform == "win32":
+        _chrome_focus_foreground()
+    time.sleep(max(0, wait_time - 4))
+    if sys.platform == "win32":
+        _chrome_focus_foreground()
+    try:
+        pg.click(core.WIDTH / 2, core.HEIGHT / 2)
+    except Exception:
+        pass
+    time.sleep(0.25)
+    for char in message:
+        if char == "\n":
+            pg.hotkey("shift", "enter")
+        else:
+            pg.typewrite(char)
+    pg.press("enter")
+    try:
+        log.log_message(_time=time.localtime(), receiver=group_target, message=message)
+    except Exception as e:
+        log.warning("PyWhatKit log_message failed (message may still have sent): %s", e)
+    if tab_close:
+        time.sleep(0.35)
+        if sys.platform == "win32":
+            _chrome_focus_foreground()
+        core.close_tab(wait_time=close_time)
 
 
 def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="", send_whatsapp=True, assets=None, brent_multiplier=1.0, schedule=None):
