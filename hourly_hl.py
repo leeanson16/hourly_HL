@@ -381,6 +381,48 @@ def _chrome_focus_foreground():
     time.sleep(0.25)
 
 
+def _chrome_activate_and_click_window_center():
+    """Foreground Chrome and click inside its window (not screen center — avoids typing into Cursor/IDE)."""
+    import sys
+    import pyautogui as pg
+    from pywhatkit.core import core
+
+    pg.FAILSAFE = False
+    if sys.platform != "win32":
+        try:
+            pg.click(core.WIDTH / 2, core.HEIGHT / 2)
+        except Exception:
+            pass
+        time.sleep(0.2)
+        return True
+    hwnd = _win_find_google_chrome_hwnd()
+    if not hwnd:
+        log.warning("Google Chrome window not found; cannot click inside Chrome for WhatsApp")
+        return False
+    _win_force_foreground(hwnd)
+    time.sleep(0.4)
+    import ctypes
+    from ctypes import wintypes
+
+    user32 = ctypes.windll.user32
+    rect = wintypes.RECT()
+    if not user32.GetWindowRect(hwnd, ctypes.byref(rect)):
+        return False
+    w = rect.right - rect.left
+    h = rect.bottom - rect.top
+    if w < 80 or h < 80:
+        return False
+    # WhatsApp Web: message pane is right of chat list; input is low — not geometric window center.
+    cx = rect.left + int(w * 0.62)
+    cy = rect.top + int(h * 0.88)
+    try:
+        pg.click(cx, cy)
+    except Exception:
+        pass
+    time.sleep(0.25)
+    return True
+
+
 def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, close_time=3, schedule=None):
     """Open WhatsApp Web in Google Chrome with prefilled text; focus Chrome, then Enter and optional tab close."""
     import sys
@@ -402,16 +444,15 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
     else:
         web.open(url)
     time.sleep(4)
-    if sys.platform == "win32":
-        _chrome_focus_foreground()
     time.sleep(max(0, wait_time - 4))
     if sys.platform == "win32":
-        _chrome_focus_foreground()
-    try:
-        pg.click(core.WIDTH / 2, core.HEIGHT / 2)
-    except Exception:
-        pass
-    time.sleep(0.15)
+        _chrome_activate_and_click_window_center()
+    else:
+        try:
+            pg.click(core.WIDTH / 2, core.HEIGHT / 2)
+        except Exception:
+            pass
+        time.sleep(0.15)
     pg.press("enter")
     try:
         log.log_message(_time=time.localtime(), receiver=phone_no, message=message)
@@ -458,16 +499,15 @@ def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_clos
 
         web.open(url)
     time.sleep(4)
-    if sys.platform == "win32":
-        _chrome_focus_foreground()
     time.sleep(max(0, wait_time - 4))
     if sys.platform == "win32":
-        _chrome_focus_foreground()
-    try:
-        pg.click(core.WIDTH / 2, core.HEIGHT / 2)
-    except Exception:
-        pass
-    time.sleep(0.25)
+        _chrome_activate_and_click_window_center()
+    else:
+        try:
+            pg.click(core.WIDTH / 2, core.HEIGHT / 2)
+        except Exception:
+            pass
+        time.sleep(0.15)
     for char in message:
         if char == "\n":
             pg.hotkey("shift", "enter")
