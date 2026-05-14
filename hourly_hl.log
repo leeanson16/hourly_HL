@@ -10107,3 +10107,39 @@
 2026-05-14 19:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-14 18:00:00+08:00 | high=1.17129 | low=1.17048
 2026-05-14 19:00:30 INFO Brent past hour HL | bar_start=2026-05-14 18:00:00+08:00 | high=104.36 | low=103.18
 2026-05-14 19:01:24 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-14 20:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-14 19:00:00+08:00 | high=4704.92 | low=4689.55
+2026-05-14 20:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-14 19:00:00+08:00 | high=87.280 | low=86.500
+2026-05-14 20:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-14 19:00:00+08:00 | high=0.72451 | low=0.72384
+2026-05-14 20:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-14 19:00:00+08:00 | high=1.17089 | low=1.16996
+2026-05-14 20:00:30 INFO Brent past hour HL | bar_start=2026-05-14 19:00:00+08:00 | high=103.94 | low=103.32
+2026-05-14 20:01:24 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-14 21:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-14 20:00:00+08:00 | high=4710.17 | low=4692.55
+2026-05-14 21:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-14 20:00:00+08:00 | high=87.070 | low=86.140
+2026-05-14 21:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-14 20:00:00+08:00 | high=0.72432 | low=0.72347
+2026-05-14 21:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-14 20:00:00+08:00 | high=1.17057 | low=1.16963
+2026-05-14 21:00:30 INFO Brent past hour HL | bar_start=2026-05-14 20:00:00+08:00 | high=103.21 | low=101.99
+2026-05-14 21:01:25 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-14 22:00:26 INFO XAUUSD past hour HL | bar_start=2026-05-14 21:00:00+08:00 | high=4707.77 | low=4666.81
+2026-05-14 22:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-14 21:00:00+08:00 | high=86.770 | low=83.840
+2026-05-14 22:00:27 INFO AUD.USD past hour HL | bar_start=2026-05-14 21:00:00+08:00 | high=0.72364 | low=0.72200
+2026-05-14 22:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-14 21:00:00+08:00 | high=1.16997 | low=1.16856
+2026-05-14 22:00:30 INFO Brent past hour HL | bar_start=2026-05-14 21:00:00+08:00 | high=103.62 | low=102.79
+2026-05-14 22:01:24 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-14 23:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-14 22:00:00+08:00 | high=4700.97 | low=4677.72
+2026-05-14 23:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-14 22:00:00+08:00 | high=85.080 | low=83.860
+2026-05-14 23:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-14 22:00:00+08:00 | high=0.72318 | low=0.72198
+2026-05-14 23:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-14 22:00:00+08:00 | high=1.17002 | low=1.16786
+2026-05-14 23:00:30 INFO Brent past hour HL | bar_start=2026-05-14 22:00:00+08:00 | high=104.20 | low=103.35
+2026-05-14 23:01:24 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-15 00:00:28 INFO XAUUSD past hour HL | bar_start=2026-05-14 23:00:00+08:00 | high=4689.53 | low=4677.21
+2026-05-15 00:00:29 INFO XAGUSD past hour HL | bar_start=2026-05-14 23:00:00+08:00 | high=85.290 | low=84.400
+2026-05-15 00:00:29 INFO AUD.USD past hour HL | bar_start=2026-05-14 23:00:00+08:00 | high=0.72282 | low=0.72222
+2026-05-15 00:00:30 INFO EUR.USD past hour HL | bar_start=2026-05-14 23:00:00+08:00 | high=1.16810 | low=1.16715
+2026-05-15 00:00:32 INFO Brent past hour HL | bar_start=2026-05-14 23:00:00+08:00 | high=103.51 | low=102.77
+2026-05-15 00:01:26 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-15 01:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-15 00:00:00+08:00 | high=4687.12 | low=4670.61
+2026-05-15 01:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-15 00:00:00+08:00 | high=85.000 | low=84.310
+2026-05-15 01:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-15 00:00:00+08:00 | high=0.72247 | low=0.72159
+2026-05-15 01:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-15 00:00:00+08:00 | high=1.16815 | low=1.16709
+2026-05-15 01:00:30 INFO Brent past hour HL | bar_start=2026-05-15 00:00:00+08:00 | high=103.52 | low=102.58
+2026-05-15 01:01:24 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
