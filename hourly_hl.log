@@ -10194,3 +10194,21 @@
 2026-05-15 14:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-15 13:00:00+08:00 | high=1.16481 | low=1.16326
 2026-05-15 14:00:30 INFO Brent past hour HL | bar_start=2026-05-15 13:00:00+08:00 | high=106.04 | low=104.97
 2026-05-15 14:01:24 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-15 15:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-15 14:00:00+08:00 | high=4580.61 | low=4556.39
+2026-05-15 15:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-15 14:00:00+08:00 | high=78.770 | low=77.600
+2026-05-15 15:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-15 14:00:00+08:00 | high=0.71690 | low=0.71572
+2026-05-15 15:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-15 14:00:00+08:00 | high=1.16436 | low=1.16323
+2026-05-15 15:00:30 INFO Brent past hour HL | bar_start=2026-05-15 14:00:00+08:00 | high=105.90 | low=105.35
+2026-05-15 15:01:24 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-15 16:00:28 INFO XAUUSD past hour HL | bar_start=2026-05-15 15:00:00+08:00 | high=4588.85 | low=4565.93
+2026-05-15 16:00:28 INFO XAGUSD past hour HL | bar_start=2026-05-15 15:00:00+08:00 | high=79.360 | low=78.100
+2026-05-15 16:00:29 INFO AUD.USD past hour HL | bar_start=2026-05-15 15:00:00+08:00 | high=0.71766 | low=0.71574
+2026-05-15 16:00:29 INFO EUR.USD past hour HL | bar_start=2026-05-15 15:00:00+08:00 | high=1.16491 | low=1.16318
+2026-05-15 16:00:31 INFO Brent past hour HL | bar_start=2026-05-15 15:00:00+08:00 | high=105.71 | low=105.02
+2026-05-15 16:01:25 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-15 17:00:27 INFO XAUUSD past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=4572.22 | low=4550.16
+2026-05-15 17:00:27 INFO XAGUSD past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=79.000 | low=77.870
+2026-05-15 17:00:28 INFO AUD.USD past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=0.71685 | low=0.71549
+2026-05-15 17:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=1.16383 | low=1.16305
+2026-05-15 17:00:30 INFO Brent past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=107.46 | low=105.69
+2026-05-15 17:01:24 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
