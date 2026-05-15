@@ -10212,3 +10212,16 @@
 2026-05-15 17:00:28 INFO EUR.USD past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=1.16383 | low=1.16305
 2026-05-15 17:00:30 INFO Brent past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=107.46 | low=105.69
 2026-05-15 17:01:24 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-15 17:26:11 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-15 17:26:11 INFO Schedule window 1: Monday 07:00 - Tuesday 00:50 (HKT)
+2026-05-15 17:26:11 INFO Schedule window 2: Tuesday 08:00 - Wednesday 00:55 (HKT)
+2026-05-15 17:26:11 INFO Schedule window 3: Wednesday 08:00 - Thursday 00:55 (HKT)
+2026-05-15 17:26:11 INFO Schedule window 4: Thursday 08:00 - Friday 00:55 (HKT)
+2026-05-15 17:26:11 INFO Schedule window 5: Friday 08:00 - Saturday 00:55 (HKT)
+2026-05-15 17:26:11 INFO WhatsApp group id: KXhelx33xPz9xEJX61r5Qp
+2026-05-15 17:26:18 INFO XAUUSD past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=4572.22 | low=4550.16
+2026-05-15 17:26:19 INFO XAGUSD past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=79.000 | low=77.870
+2026-05-15 17:26:19 INFO AUD.USD past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=0.71685 | low=0.71549
+2026-05-15 17:26:20 INFO EUR.USD past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=1.16383 | low=1.16305
+2026-05-15 17:26:22 INFO Brent past hour HL | bar_start=2026-05-15 16:00:00+08:00 | high=106.26 | low=104.51
+2026-05-15 17:26:22 INFO Next run in 0.57 hrs (at 20 s past the hour HKT)
