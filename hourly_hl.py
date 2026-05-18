@@ -304,6 +304,14 @@ def _win_exe_path_from_hwnd(hwnd):
     return buf.value or None
 
 
+def _win_hwnd_is_google_chrome(hwnd):
+    """True if hwnd belongs to Google Chrome (not Edge/Brave — same window class)."""
+    if not hwnd:
+        return False
+    exe = (_win_exe_path_from_hwnd(hwnd) or "").lower()
+    return "google\\chrome\\application\\chrome.exe" in exe.replace("/", "\\")
+
+
 def _win_find_google_chrome_hwnd():
     """Visible Google Chrome main window only (excludes Edge/Brave: same Chrome_WidgetWin_1 class). Prefer WhatsApp tab."""
     import ctypes
@@ -321,8 +329,7 @@ def _win_find_google_chrome_hwnd():
         user32.GetClassNameW(hwnd, cls, 256)
         if cls.value != CHROME_CLASS:
             return True
-        exe = (_win_exe_path_from_hwnd(hwnd) or "").lower()
-        if "google\\chrome\\application\\chrome.exe" not in exe.replace("/", "\\"):
+        if not _win_hwnd_is_google_chrome(hwnd):
             return True
         n = user32.GetWindowTextLengthW(hwnd)
         title = ""
@@ -352,34 +359,99 @@ def _win_force_foreground(hwnd):
     user32 = ctypes.windll.user32
     kernel32 = ctypes.windll.kernel32
     SW_RESTORE = 9
+    pid_dummy = wintypes.DWORD()
     try:
         user32.ShowWindow(hwnd, SW_RESTORE)
+        try:
+            user32.SwitchToThisWindow(hwnd, True)
+        except Exception:
+            pass
+        if user32.GetForegroundWindow() == hwnd:
+            return True
         fg = user32.GetForegroundWindow()
-        pid_dummy = wintypes.DWORD()
-        tid_fg = user32.GetWindowThreadProcessId(fg, ctypes.byref(pid_dummy)) if fg else 0
         cur_tid = kernel32.GetCurrentThreadId()
+        tid_fg = user32.GetWindowThreadProcessId(fg, ctypes.byref(pid_dummy)) if fg else 0
+        tid_target = user32.GetWindowThreadProcessId(hwnd, ctypes.byref(pid_dummy))
         if fg and tid_fg and tid_fg != cur_tid:
             user32.AttachThreadInput(tid_fg, cur_tid, True)
+        if tid_target and tid_target != cur_tid:
+            user32.AttachThreadInput(tid_target, cur_tid, True)
+        user32.BringWindowToTop(hwnd)
         user32.SetForegroundWindow(hwnd)
+        if tid_target and tid_target != cur_tid:
+            user32.AttachThreadInput(tid_target, cur_tid, False)
         if fg and tid_fg and tid_fg != cur_tid:
             user32.AttachThreadInput(tid_fg, cur_tid, False)
-        return True
+        return user32.GetForegroundWindow() == hwnd
     except Exception:
         return False
 
 
-def _chrome_focus_foreground():
+def _chrome_focus_foreground(quiet=False, settle=True):
     """Bring Google Chrome to the foreground (Windows); keys go to Chrome, not Edge."""
     import sys
 
     if sys.platform != "win32":
-        return
+        return True
     hwnd = _win_find_google_chrome_hwnd()
     if hwnd:
         _win_force_foreground(hwnd)
-    else:
+        if settle:
+            time.sleep(0.2)
+        return True
+    if not quiet:
         log.warning("Google Chrome window not found for focus (Edge ignored)")
-    time.sleep(0.25)
+    return False
+
+
+def _chrome_ensure_foreground(quiet=False):
+    """Re-focus Chrome if Edge or another app stole foreground (e.g. during long waits)."""
+    import sys
+
+    if sys.platform != "win32":
+        return True
+    import ctypes
+
+    if _win_hwnd_is_google_chrome(ctypes.windll.user32.GetForegroundWindow()):
+        return True
+    return _chrome_focus_foreground(quiet=quiet)
+
+
+def _chrome_sleep(seconds, interval=2.0):
+    """Sleep but keep Google Chrome in the foreground (Windows); plain sleep lets Edge take focus."""
+    import sys
+
+    if sys.platform != "win32" or seconds <= 0:
+        if seconds > 0:
+            time.sleep(seconds)
+        return
+    end = time.time() + seconds
+    while True:
+        remaining = end - time.time()
+        if remaining <= 0:
+            break
+        _chrome_ensure_foreground(quiet=True)
+        time.sleep(min(interval, remaining))
+
+
+def _chrome_close_tab(wait_time=3):
+    """Close the active tab in Google Chrome only — pywhatkit close_tab hits whatever app is focused (often Edge)."""
+    import sys
+    import pyautogui as pg
+
+    pg.FAILSAFE = False
+    if sys.platform != "win32":
+        from pywhatkit.core import core
+
+        core.close_tab(wait_time=wait_time)
+        return
+    if wait_time > 0:
+        _chrome_sleep(wait_time, interval=2.0)
+    _chrome_ensure_foreground(quiet=False)
+    time.sleep(0.15)
+    pg.hotkey("ctrl", "w")
+    time.sleep(0.1)
+    pg.press("enter")
 
 
 def _chrome_activate_and_click_window_center():
@@ -463,6 +535,7 @@ def _paste_whatsapp_message(message):
 
     pg.FAILSAFE = False
     if sys.platform == "win32":
+        _chrome_ensure_foreground(quiet=False)
         try:
             _win_clipboard_set_text(message)
             time.sleep(0.15)
@@ -499,18 +572,20 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
         _chrome_focus_foreground()
     else:
         web.open(url)
-    time.sleep(4)
     if sys.platform == "win32":
-        _chrome_focus_foreground()
-    time.sleep(max(0, wait_time - 4))
-    if sys.platform == "win32":
+        _chrome_sleep(4)
+        _chrome_sleep(max(0, wait_time - 4))
         _chrome_activate_and_click_window_center()
     else:
+        time.sleep(4)
+        time.sleep(max(0, wait_time - 4))
         try:
             pg.click(core.WIDTH / 2, core.HEIGHT / 2)
         except Exception:
             pass
         time.sleep(0.15)
+    if sys.platform == "win32":
+        _chrome_ensure_foreground()
     pg.press("enter")
     try:
         log.log_message(_time=time.localtime(), receiver=phone_no, message=message)
@@ -519,8 +594,9 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
     if tab_close:
         time.sleep(0.35)
         if sys.platform == "win32":
-            _chrome_focus_foreground()
-        core.close_tab(wait_time=close_time)
+            _chrome_close_tab(wait_time=close_time)
+        else:
+            core.close_tab(wait_time=close_time)
 
 
 def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_close=True, close_time=15, schedule=None):
@@ -557,13 +633,13 @@ def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_clos
         import webbrowser as web
 
         web.open(url)
-    time.sleep(4)
     if sys.platform == "win32":
-        _chrome_focus_foreground()
-    time.sleep(max(0, wait_time - 4))
-    if sys.platform == "win32":
+        _chrome_sleep(4)
+        _chrome_sleep(max(0, wait_time - 4))
         _chrome_activate_and_click_window_center()
     else:
+        time.sleep(4)
+        time.sleep(max(0, wait_time - 4))
         try:
             pg.click(core.WIDTH / 2, core.HEIGHT / 2)
         except Exception:
@@ -572,6 +648,7 @@ def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_clos
     _paste_whatsapp_message(message)
     if sys.platform == "win32":
         _chrome_activate_and_click_window_center()
+        _chrome_ensure_foreground()
     time.sleep(0.25)
     pg.press("enter")
     try:
@@ -581,8 +658,9 @@ def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_clos
     if tab_close:
         time.sleep(0.35)
         if sys.platform == "win32":
-            _chrome_focus_foreground()
-        core.close_tab(wait_time=close_time)
+            _chrome_close_tab(wait_time=close_time)
+        else:
+            core.close_tab(wait_time=close_time)
 
 
 def run_once(whatsapp_number=None, whatsapp_group_id="", whatsapp_group_name="", send_whatsapp=True, assets=None, brent_multiplier=1.0, schedule=None):
