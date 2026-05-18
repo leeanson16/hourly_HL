@@ -10330,3 +10330,4 @@
 2026-05-18 10:01:51 INFO AUD.USD past hour HL | bar_start=2026-05-18 09:00:00+08:00 | high=0.71318 | low=0.71203
 2026-05-18 10:01:52 INFO EUR.USD past hour HL | bar_start=2026-05-18 09:00:00+08:00 | high=1.16189 | low=1.16085
 2026-05-18 10:01:52 INFO Brent past hour HL | bar_start=2026-05-18 09:00:00+08:00 | high=108.78 | low=107.39
+2026-05-18 10:02:48 INFO Next run in 0.96 hrs (at 20 s past the hour HKT)
