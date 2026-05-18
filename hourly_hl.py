@@ -252,6 +252,7 @@ def _find_google_chrome_exe_windows():
     """Return path to google chrome.exe, or None. Config key chrome_exe wins if set and exists."""
     cfg = _load_config()
     custom = (cfg.get("chrome_exe") or "").strip()
+
     if custom:
         cp = Path(custom)
         if cp.is_file():
@@ -423,6 +424,60 @@ def _chrome_activate_and_click_window_center():
     return True
 
 
+def _win_clipboard_set_text(text):
+    """Put Unicode text on the Windows clipboard (for reliable WhatsApp group paste)."""
+    import ctypes
+
+    CF_UNICODETEXT = 13
+    GMEM_MOVEABLE = 0x0002
+    kernel32 = ctypes.windll.kernel32
+    user32 = ctypes.windll.user32
+    if not user32.OpenClipboard(None):
+        raise OSError("OpenClipboard failed")
+    try:
+        user32.EmptyClipboard()
+        encoded = text.encode("utf-16-le") + b"\x00\x00"
+        size = len(encoded)
+        h_global = kernel32.GlobalAlloc(GMEM_MOVEABLE, size)
+        if not h_global:
+            raise OSError("GlobalAlloc failed")
+        p_global = kernel32.GlobalLock(h_global)
+        if not p_global:
+            kernel32.GlobalFree(h_global)
+            raise OSError("GlobalLock failed")
+        try:
+            ctypes.memmove(p_global, encoded, size)
+        finally:
+            kernel32.GlobalUnlock(h_global)
+        if not user32.SetClipboardData(CF_UNICODETEXT, h_global):
+            kernel32.GlobalFree(h_global)
+            raise OSError("SetClipboardData failed")
+    finally:
+        user32.CloseClipboard()
+
+
+def _paste_whatsapp_message(message):
+    """Paste full message into compose box; typewrite drops chars on long group messages."""
+    import sys
+    import pyautogui as pg
+
+    pg.FAILSAFE = False
+    if sys.platform == "win32":
+        try:
+            _win_clipboard_set_text(message)
+            time.sleep(0.15)
+            pg.hotkey("ctrl", "v")
+            time.sleep(0.35)
+            return
+        except Exception as e:
+            log.warning("Clipboard paste failed, falling back to typewrite: %s", e)
+    for char in message:
+        if char == "\n":
+            pg.hotkey("shift", "enter")
+        else:
+            pg.typewrite(char)
+
+
 def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, close_time=3, schedule=None):
     """Open WhatsApp Web in Google Chrome with prefilled text; focus Chrome, then Enter and optional tab close."""
     import sys
@@ -508,11 +563,10 @@ def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_clos
         except Exception:
             pass
         time.sleep(0.15)
-    for char in message:
-        if char == "\n":
-            pg.hotkey("shift", "enter")
-        else:
-            pg.typewrite(char)
+    _paste_whatsapp_message(message)
+    if sys.platform == "win32":
+        _chrome_activate_and_click_window_center()
+    time.sleep(0.25)
     pg.press("enter")
     try:
         log.log_message(_time=time.localtime(), receiver=group_target, message=message)
