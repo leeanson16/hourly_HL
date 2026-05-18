@@ -496,9 +496,12 @@ def _send_whatsapp_instantly(phone_no, message, wait_time=15, tab_close=False, c
     if sys.platform == "win32":
         if not _open_url_in_google_chrome_windows(url):
             return
+        _chrome_focus_foreground()
     else:
         web.open(url)
     time.sleep(4)
+    if sys.platform == "win32":
+        _chrome_focus_foreground()
     time.sleep(max(0, wait_time - 4))
     if sys.platform == "win32":
         _chrome_activate_and_click_window_center()
@@ -549,11 +552,14 @@ def _send_whatsapp_group_instantly(group_target, message, wait_time=22, tab_clos
     if sys.platform == "win32":
         if not _open_url_in_google_chrome_windows(url):
             return
+        _chrome_focus_foreground()
     else:
         import webbrowser as web
 
         web.open(url)
     time.sleep(4)
+    if sys.platform == "win32":
+        _chrome_focus_foreground()
     time.sleep(max(0, wait_time - 4))
     if sys.platform == "win32":
         _chrome_activate_and_click_window_center()
