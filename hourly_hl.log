@@ -11247,3 +11247,4 @@
 2026-05-27 10:11:00 INFO EUR.USD past hour HL | bar_start=2026-05-27 09:00:00+08:00 | high=1.16394 | low=1.16328
 2026-05-27 10:11:00 INFO Brent past hour HL | bar_start=2026-05-27 09:00:00+08:00 | high=96.04 | low=95.34
 2026-05-27 10:11:25 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-05-27 10:11:57 INFO Next run in 0.81 hrs (at 20 s past the hour HKT)
