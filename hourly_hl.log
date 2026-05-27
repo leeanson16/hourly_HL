@@ -11221,3 +11221,16 @@
 2026-05-27 10:01:32 WARNING IB connect attempt 3/3 failed: 
 2026-05-27 10:01:32 WARNING IB connect/run failed, will retry next run: 
 2026-05-27 10:01:32 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-05-27 10:08:56 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202607', exchange='NYMEX', currency='USD')
+2026-05-27 10:08:56 INFO Schedule window 1: Monday 07:00 - Tuesday 00:50 (HKT)
+2026-05-27 10:08:56 INFO Schedule window 2: Tuesday 08:00 - Wednesday 00:55 (HKT)
+2026-05-27 10:08:56 INFO Schedule window 3: Wednesday 08:00 - Thursday 00:55 (HKT)
+2026-05-27 10:08:56 INFO Schedule window 4: Thursday 08:00 - Friday 00:55 (HKT)
+2026-05-27 10:08:56 INFO Schedule window 5: Friday 08:00 - Saturday 00:55 (HKT)
+2026-05-27 10:08:56 INFO WhatsApp group id: KXhelx33xPz9xEJX61r5Qp
+2026-05-27 10:09:05 INFO XAUUSD past hour HL | bar_start=2026-05-27 09:00:00+08:00 | high=4521.14 | low=4506.92
+2026-05-27 10:09:06 INFO XAGUSD past hour HL | bar_start=2026-05-27 09:00:00+08:00 | high=77.490 | low=76.720
+2026-05-27 10:09:06 INFO AUD.USD past hour HL | bar_start=2026-05-27 09:00:00+08:00 | high=0.71786 | low=0.71527
+2026-05-27 10:09:07 INFO EUR.USD past hour HL | bar_start=2026-05-27 09:00:00+08:00 | high=1.16394 | low=1.16328
+2026-05-27 10:09:09 INFO Brent past hour HL | bar_start=2026-05-27 09:00:00+08:00 | high=96.04 | low=95.34
+2026-05-27 10:09:34 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
