@@ -11686,3 +11686,24 @@
 2026-06-01 15:00:32 WARNING Brent past hour HL | no bar data
 2026-06-01 15:00:55 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
 2026-06-01 15:01:25 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-06-01 16:00:27 INFO XAUUSD past hour HL | bar_start=2026-06-01 15:00:00+08:00 | high=4509.98 | low=4492.69
+2026-06-01 16:00:27 INFO XAGUSD past hour HL | bar_start=2026-06-01 15:00:00+08:00 | high=75.900 | low=75.290
+2026-06-01 16:00:28 INFO AUD.USD past hour HL | bar_start=2026-06-01 15:00:00+08:00 | high=0.71847 | low=0.71767
+2026-06-01 16:00:28 INFO EUR.USD past hour HL | bar_start=2026-06-01 15:00:00+08:00 | high=1.16648 | low=1.16518
+2026-06-01 16:00:32 WARNING Brent past hour HL | no bar data
+2026-06-01 16:00:55 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-06-01 16:01:25 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-06-01 17:00:28 INFO XAUUSD past hour HL | bar_start=2026-06-01 16:00:00+08:00 | high=4504.49 | low=4490.67
+2026-06-01 17:00:29 INFO XAGUSD past hour HL | bar_start=2026-06-01 16:00:00+08:00 | high=75.930 | low=75.350
+2026-06-01 17:00:30 INFO AUD.USD past hour HL | bar_start=2026-06-01 16:00:00+08:00 | high=0.71842 | low=0.71791
+2026-06-01 17:00:30 INFO EUR.USD past hour HL | bar_start=2026-06-01 16:00:00+08:00 | high=1.16603 | low=1.16534
+2026-06-01 17:00:34 WARNING Brent past hour HL | no bar data
+2026-06-01 17:00:57 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-06-01 17:01:27 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-06-01 18:00:27 INFO XAUUSD past hour HL | bar_start=2026-06-01 17:00:00+08:00 | high=4506.47 | low=4489.20
+2026-06-01 18:00:28 INFO XAGUSD past hour HL | bar_start=2026-06-01 17:00:00+08:00 | high=76.300 | low=75.610
+2026-06-01 18:00:28 INFO AUD.USD past hour HL | bar_start=2026-06-01 17:00:00+08:00 | high=0.71859 | low=0.71767
+2026-06-01 18:00:29 INFO EUR.USD past hour HL | bar_start=2026-06-01 17:00:00+08:00 | high=1.16606 | low=1.16482
+2026-06-01 18:00:32 WARNING Brent past hour HL | no bar data
+2026-06-01 18:00:55 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-06-01 18:01:25 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
