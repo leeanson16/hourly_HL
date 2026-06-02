@@ -12,11 +12,11 @@ use_brent: True
 # Brent NYMEX future: set brent_con_id from TWS Contract Details when the front month changes.
 # If unset, brent_contract_month (YYYYMM) is used instead. Expired months return HMDS "no data".
 # brent_con_id: 339981260
-brent_contract_month: "202607"
+brent_contract_month: "202608"
 brent_multiplier: 0.968
 
 # If true, skip sending WhatsApp on the first in-schedule run (then send on subsequent runs).
-dont_send_now: true
+dont_send_now: false
 
 # Full path to chrome.exe (optional). If unset or missing, standard install locations are tried.
 chrome_exe: "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
