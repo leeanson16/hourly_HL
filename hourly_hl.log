@@ -11845,3 +11845,45 @@
 2026-06-02 19:00:30 INFO Brent past hour HL | bar_start=2026-06-02 18:00:00+08:00 | high=91.15 | low=90.72
 2026-06-02 19:00:53 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
 2026-06-02 19:01:26 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-06-02 20:00:27 INFO XAUUSD past hour HL | bar_start=2026-06-02 19:00:00+08:00 | high=4534.78 | low=4525.69
+2026-06-02 20:00:27 INFO XAGUSD past hour HL | bar_start=2026-06-02 19:00:00+08:00 | high=76.470 | low=76.210
+2026-06-02 20:00:28 INFO AUD.USD past hour HL | bar_start=2026-06-02 19:00:00+08:00 | high=0.71845 | low=0.71803
+2026-06-02 20:00:28 INFO EUR.USD past hour HL | bar_start=2026-06-02 19:00:00+08:00 | high=1.16528 | low=1.16437
+2026-06-02 20:00:30 INFO Brent past hour HL | bar_start=2026-06-02 19:00:00+08:00 | high=90.98 | low=90.53
+2026-06-02 20:00:53 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-06-02 20:01:26 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-06-02 21:00:27 INFO XAUUSD past hour HL | bar_start=2026-06-02 20:00:00+08:00 | high=4534.26 | low=4513.54
+2026-06-02 21:00:28 INFO XAGUSD past hour HL | bar_start=2026-06-02 20:00:00+08:00 | high=76.700 | low=76.000
+2026-06-02 21:00:28 INFO AUD.USD past hour HL | bar_start=2026-06-02 20:00:00+08:00 | high=0.71823 | low=0.71760
+2026-06-02 21:00:29 INFO EUR.USD past hour HL | bar_start=2026-06-02 20:00:00+08:00 | high=1.16558 | low=1.16475
+2026-06-02 21:00:31 INFO Brent past hour HL | bar_start=2026-06-02 20:00:00+08:00 | high=91.34 | low=90.49
+2026-06-02 21:00:54 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-06-02 21:01:27 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-06-02 22:00:27 INFO XAUUSD past hour HL | bar_start=2026-06-02 21:00:00+08:00 | high=4524.95 | low=4502.83
+2026-06-02 22:00:27 INFO XAGUSD past hour HL | bar_start=2026-06-02 21:00:00+08:00 | high=76.560 | low=75.800
+2026-06-02 22:00:28 INFO AUD.USD past hour HL | bar_start=2026-06-02 21:00:00+08:00 | high=0.71796 | low=0.71727
+2026-06-02 22:00:28 INFO EUR.USD past hour HL | bar_start=2026-06-02 21:00:00+08:00 | high=1.16524 | low=1.16395
+2026-06-02 22:00:30 INFO Brent past hour HL | bar_start=2026-06-02 21:00:00+08:00 | high=92.09 | low=90.99
+2026-06-02 22:00:53 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-06-02 22:01:26 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-06-02 23:00:27 INFO XAUUSD past hour HL | bar_start=2026-06-02 22:00:00+08:00 | high=4507.06 | low=4490.40
+2026-06-02 23:00:27 INFO XAGUSD past hour HL | bar_start=2026-06-02 22:00:00+08:00 | high=75.990 | low=75.250
+2026-06-02 23:00:28 INFO AUD.USD past hour HL | bar_start=2026-06-02 22:00:00+08:00 | high=0.71850 | low=0.71700
+2026-06-02 23:00:28 INFO EUR.USD past hour HL | bar_start=2026-06-02 22:00:00+08:00 | high=1.16501 | low=1.16363
+2026-06-02 23:00:30 INFO Brent past hour HL | bar_start=2026-06-02 22:00:00+08:00 | high=92.36 | low=91.59
+2026-06-02 23:00:53 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-06-02 23:01:26 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-06-03 00:00:28 INFO XAUUSD past hour HL | bar_start=2026-06-02 23:00:00+08:00 | high=4508.61 | low=4500.26
+2026-06-03 00:00:29 INFO XAGUSD past hour HL | bar_start=2026-06-02 23:00:00+08:00 | high=76.050 | low=75.690
+2026-06-03 00:00:30 INFO AUD.USD past hour HL | bar_start=2026-06-02 23:00:00+08:00 | high=0.71881 | low=0.71813
+2026-06-03 00:00:30 INFO EUR.USD past hour HL | bar_start=2026-06-02 23:00:00+08:00 | high=1.16451 | low=1.16355
+2026-06-03 00:00:32 INFO Brent past hour HL | bar_start=2026-06-02 23:00:00+08:00 | high=92.39 | low=91.48
+2026-06-03 00:00:55 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-06-03 00:01:28 INFO Next run in 7.98 hrs (at 20 s past the hour HKT)
+2026-06-03 08:00:27 INFO XAUUSD past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=4488.83 | low=4462.36
+2026-06-03 08:00:28 INFO XAGUSD past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=75.020 | low=74.300
+2026-06-03 08:00:28 INFO AUD.USD past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=0.71784 | low=0.71715
+2026-06-03 08:00:29 INFO EUR.USD past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=1.16274 | low=1.16198
+2026-06-03 08:00:31 INFO Brent past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=94.96 | low=93.32
+2026-06-03 08:00:54 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
+2026-06-03 08:01:26 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
