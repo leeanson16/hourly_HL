@@ -11887,3 +11887,16 @@
 2026-06-03 08:00:31 INFO Brent past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=94.96 | low=93.32
 2026-06-03 08:00:54 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
 2026-06-03 08:01:26 INFO Next run in 0.98 hrs (at 20 s past the hour HKT)
+2026-06-03 08:12:23 INFO Brent (BZ) included | contract=Contract(secType='FUT', symbol='BZ', lastTradeDateOrContractMonth='202608', exchange='NYMEX', currency='USD')
+2026-06-03 08:12:23 INFO Schedule window 1: Monday 06:00 - Tuesday 00:50 (HKT)
+2026-06-03 08:12:23 INFO Schedule window 2: Tuesday 08:00 - Wednesday 00:55 (HKT)
+2026-06-03 08:12:23 INFO Schedule window 3: Wednesday 08:00 - Thursday 00:55 (HKT)
+2026-06-03 08:12:23 INFO Schedule window 4: Thursday 08:00 - Friday 00:55 (HKT)
+2026-06-03 08:12:23 INFO Schedule window 5: Friday 08:00 - Saturday 00:55 (HKT)
+2026-06-03 08:12:23 INFO WhatsApp group id: KXhelx33xPz9xEJX61r5Qp
+2026-06-03 08:12:32 INFO XAUUSD past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=4488.83 | low=4462.36
+2026-06-03 08:12:33 INFO XAGUSD past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=75.020 | low=74.300
+2026-06-03 08:12:33 INFO AUD.USD past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=0.71784 | low=0.71715
+2026-06-03 08:12:34 INFO EUR.USD past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=1.16274 | low=1.16198
+2026-06-03 08:12:35 INFO Brent past hour HL | bar_start=2026-06-03 07:00:00+08:00 | high=94.96 | low=93.32
+2026-06-03 08:12:35 INFO Next run in 0.80 hrs (at 20 s past the hour HKT)
