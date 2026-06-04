@@ -12053,3 +12053,7 @@
 2026-06-04 19:40:00 INFO Schedule window 4: Thursday 08:00 - Friday 00:55 (HKT)
 2026-06-04 19:40:00 INFO Schedule window 5: Friday 08:00 - Saturday 00:55 (HKT)
 2026-06-04 19:40:00 INFO WhatsApp group id: KXhelx33xPz9xEJX61r5Qp
+2026-06-04 19:40:02 WARNING IB connect attempt 1/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-06-04 19:40:02 INFO Retrying in 30 s ...
+2026-06-04 19:40:34 WARNING IB connect attempt 2/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-06-04 19:40:34 INFO Retrying in 30 s ...
