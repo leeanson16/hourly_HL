@@ -12057,3 +12057,6 @@
 2026-06-04 19:40:02 INFO Retrying in 30 s ...
 2026-06-04 19:40:34 WARNING IB connect attempt 2/3 failed: [WinError 1225] The remote computer refused the network connection
 2026-06-04 19:40:34 INFO Retrying in 30 s ...
+2026-06-04 19:41:06 WARNING IB connect attempt 3/3 failed: [WinError 1225] The remote computer refused the network connection
+2026-06-04 19:41:06 WARNING IB connect/run failed, will retry next run: [WinError 1225] The remote computer refused the network connection
+2026-06-04 19:41:06 INFO Next run in 0.32 hrs (at 20 s past the hour HKT)
