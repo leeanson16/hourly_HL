@@ -12102,3 +12102,10 @@
 2026-06-05 00:06:16 INFO Schedule window 4: Thursday 08:00 - Friday 00:55 (HKT)
 2026-06-05 00:06:16 INFO Schedule window 5: Friday 08:00 - Saturday 00:55 (HKT)
 2026-06-05 00:06:16 INFO WhatsApp group id: KXhelx33xPz9xEJX61r5Qp
+2026-06-05 00:06:42 WARNING XAU spot unavailable; omitting spot in message
+2026-06-05 00:06:42 INFO XAUUSD past hour HL | bar_start=2026-06-04 23:00:00+08:00 | high=4479.15 | low=4463.76
+2026-06-05 00:06:43 INFO XAGUSD past hour HL | bar_start=2026-06-04 23:00:00+08:00 | high=73.900 | low=73.450
+2026-06-05 00:06:44 INFO AUD.USD past hour HL | bar_start=2026-06-04 23:00:00+08:00 | high=0.71427 | low=0.71364
+2026-06-05 00:06:44 INFO EUR.USD past hour HL | bar_start=2026-06-04 23:00:00+08:00 | high=1.16316 | low=1.16224
+2026-06-05 00:06:45 INFO Brent past hour HL | bar_start=2026-06-04 23:00:00+08:00 | high=92.41 | low=91.69
+2026-06-05 00:06:45 INFO Next run in 7.89 hrs (at 20 s past the hour HKT)
