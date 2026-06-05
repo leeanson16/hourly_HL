@@ -12130,3 +12130,4 @@
 2026-06-05 08:14:38 INFO AUD.USD past hour HL | bar_start=2026-06-05 07:00:00+08:00 | high=0.71361 | low=0.71292
 2026-06-05 08:14:38 INFO EUR.USD past hour HL | bar_start=2026-06-05 07:00:00+08:00 | high=1.16138 | low=1.16120
 2026-06-05 08:14:39 INFO Brent past hour HL | bar_start=2026-06-05 07:00:00+08:00 | high=92.32 | low=92.11
+2026-06-05 08:15:04 WARNING Clipboard paste failed, falling back to typewrite: GlobalLock failed
