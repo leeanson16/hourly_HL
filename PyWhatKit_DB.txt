@@ -5403,3 +5403,33 @@ Time: 0:1
 Group ID: KXhelx33xPz9xEJX61r5Qp
 Message: xau 4333.32 spot 4372.69 high 4334.17 lowxag 69.470 high 68.450 lowaud 0.70821 high 0.70581 loweur 1.15600 high 1.15315 lowbrent 91.06 high 90.22 low
 --------------------
+Date: 8/6/2026
+Time: 9:1
+Group ID: KXhelx33xPz9xEJX61r5Qp
+Message: xau 4340.41 spot 4353.53 high 4339.85 lowxag 68.500 high 68.010 lowaud 0.70591 high 0.70413 loweur 1.15336 high 1.15209 lowbrent 92.51 high 92.15 low
+--------------------
+Date: 8/6/2026
+Time: 10:1
+Group ID: KXhelx33xPz9xEJX61r5Qp
+Message: xau 4327.82 spot 4346.10 high 4300.16 lowxag 68.490 high 66.930 lowaud 0.70622 high 0.70353 loweur 1.15349 high 1.15118 lowbrent 94.04 high 91.95 low
+--------------------
+Date: 8/6/2026
+Time: 11:1
+Group ID: KXhelx33xPz9xEJX61r5Qp
+Message: xau 4312.67 spot 4330.89 high 4307.47 lowxag 68.060 high 67.400 lowaud 0.70534 high 0.70422 loweur 1.15316 high 1.15206 lowbrent 93.83 high 92.74 low
+--------------------
+Date: 8/6/2026
+Time: 12:1
+Group ID: KXhelx33xPz9xEJX61r5Qp
+Message: xau 4318.51 spot 4317.36 high 4303.70 lowxag 67.870 high 67.270 lowaud 0.70527 high 0.70448 loweur 1.15325 high 1.15260 lowbrent 93.68 high 93.08 low
+--------------------
+Date: 8/6/2026
+Time: 13:1
+Group ID: KXhelx33xPz9xEJX61r5Qp
+Message: xau 4313.25 spot 4321.97 high 4307.73 lowxag 68.040 high 67.630 lowaud 0.70546 high 0.70438 loweur 1.15340 high 1.15299 lowbrent 94.20 high 93.28 low
+--------------------
+Date: 8/6/2026
+Time: 14:1
+Group ID: KXhelx33xPz9xEJX61r5Qp
+Message: xau 4296.83 spot 4316.27 high 4268.54 lowxag 67.890 high 66.170 lowaud 0.70534 high 0.70346 loweur 1.15399 high 1.15177 lowbrent 94.64 high 93.83 low
+--------------------
